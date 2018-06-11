@@ -5,6 +5,20 @@ layout: default
 <p class="meta">{{ page.date | date_to_string }}</p>
 
 <div class="post">
+  {% if page.infourl %}
+    <a href="{{ page.infourl }}"><strong><i>More info</i></strong></a>
+  {% endif %}
+
+  {% if page.download %}
+  	<a href="{{ page.download | absolute_url }}">Download as <strong>ZIP File</strong></a>
+  {% endif %}
+  
+  {% if page.description %}
+  	<i>{{ page.description }}</i>
+  {% endif %}
+  
+  <br><br>
+  
   {{ content }}
 </div>
 
@@ -14,16 +28,4 @@ layout: default
         <img class="wi5" src="{{ image | absolute_url }}">
     {% endfor %}
     </div>
-{% endif %}
-
-{% if page.download %}
-	<a href="{{ page.download | absolute_url }}">Download as <strong>ZIP File</strong></a>
-{% endif %}
-
-{% if page.infourl %}
-	<a href="{{ page.infourl }}"><strong><i>More info</i></strong></a>
-{% endif %}
-
-{% if page.description %}
-	<i>{{ page.description }}</i>
 {% endif %}

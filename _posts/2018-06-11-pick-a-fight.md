@@ -3,6 +3,8 @@ layout: post
 title: "Global Game Jam 2015: Pick a Fight"
 date: 2018-06-11
 tags: game
+images:
+ - "/assets/content/pick-a-fight.png"
 download: "/assets/content/Pick a Fight.zip"
 infourl: "https://globalgamejam.org/2015/games/pick-fight"
 description: "Requires 2 controllers"
