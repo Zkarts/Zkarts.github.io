@@ -6,7 +6,7 @@ tags: game
 images:
  - "/assets/content/pick-a-fight.png" | absolute_url
 download: "/assets/content/Pick a Fight.zip"
-url: https://globalgamejam.org/2015/games/pick-fight
+infourl: https://globalgamejam.org/2015/games/pick-fight
 description: Requires 2 controllers
 ---
 
