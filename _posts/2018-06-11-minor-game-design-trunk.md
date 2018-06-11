@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Minor Game Design - Design for Space Game: Trunk"
+title: "Minor Game Design, Design for Space Game: Trunk"
 date: 2018-06-11
 tags: game
 images:

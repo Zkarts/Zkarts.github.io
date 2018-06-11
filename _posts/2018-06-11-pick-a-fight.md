@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Global Game Jam 2015 - Pick a Fight"
+title: "Global Game Jam 2015: Pick a Fight"
 date: 2018-06-11
 tags: game
 images:
