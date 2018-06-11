@@ -25,7 +25,8 @@ li.post {
 .post {
 	width: 200px;
 	height: 130px;
-	border-radius: 10px;
+	border-radius: 7px;
+	overflow: hidden;
 }
 .post img {
 	width: 100%;
