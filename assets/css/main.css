@@ -19,13 +19,13 @@
 li.post {
 	list-style: none;
 	display: inline-block;
-	margin-right: 20px;
-	margin-bottom: 20px;
+	margin-right: 10px;
+	margin-bottom: 10px;
 	position: relative;
 }
 .post {
-	width: 200px;
-	height: 130px;
+	width: 238px;
+	height: 150px;
 	border-radius: 7px;
 	overflow: hidden;
 }
@@ -48,4 +48,8 @@ li.post {
 .grow:hover {
   transform: scale(1.1);
   z-index: 100;
+}
+
+.no-padding {
+	padding: 0;
 }
