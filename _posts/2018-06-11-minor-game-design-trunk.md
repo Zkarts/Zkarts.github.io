@@ -4,7 +4,7 @@ title: "Minor Game Design, Design for Space Game: Trunk"
 date: 2018-06-11
 tags: game
 images:
- - "/assets/content/trunk.png"
+ - "/assets/images/trunk.png"
 download: "/assets/content/Trunk final.zip"
 description: "WASD to move, mouse to move the camera and once you have legs, space to jump. 
 With a controller, walk with the left stick, control the camera with the right stick and jump with A or Y.
