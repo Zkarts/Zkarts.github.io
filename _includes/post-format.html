@@ -1,11 +1,11 @@
-{% if post.images %}
-  {% for image in post.images limit:1 %}
-    <img src="{{ image | absolute_url }}">
-  {% endfor %}
-{% else %}
-  <img src="/assets/images/placeholder.png">
-{% endif %}
-
 <a href="{{ post.url }}">
+  {% if post.images %}
+    {% for image in post.images limit:1 %}
+      <img src="{{ image | absolute_url }}">
+    {% endfor %}
+  {% else %}
+    <img src="/assets/images/placeholder.png">
+  {% endif %}
+  
   <b class="overlay-text">{{ post.title }}</b>
 </a>
