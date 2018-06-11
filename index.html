@@ -9,8 +9,10 @@ title: Erik Molenaar
 
 <ul>
   {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
+    <li class=""post">
+      <a href="{{ post.url }}">
+        {% include JB/post_content %}
+	  </a>
     </li>
   {% endfor %}
 </ul>
