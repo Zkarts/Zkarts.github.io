@@ -7,3 +7,23 @@ layout: default
 <div class="post">
   {{ content }}
 </div>
+
+{% if page.images %}
+    <div>
+    {% for image in page.images %}
+        <img class="wi5" src="{{ image | absolute_url }}">
+    {% endfor %}
+    </div>
+{% endif %}
+
+{% if page.download %}
+	<a href="{{ page.download | absolute_url }}">Download as <strong>ZIP File</strong></a>
+{% endif %}
+
+{% if page.url %}
+	<a href="{{ page.url }}"><strong><i>More info</i></strong></a>
+{% endif %}
+
+{% if page.description %}
+	<i>{{ page.description }}</i>
+{% endif %}
