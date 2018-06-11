@@ -2,7 +2,7 @@
 
 {% if post.images %}
     <div>
-    {% for image in page.images %}
+    {% for image in post.images limit:1 %}
         <img style="width: 200px; height: 130px; border-radius: 10px;" src="{{ image | absolute_url }}">
     {% endfor %}
     </div>
