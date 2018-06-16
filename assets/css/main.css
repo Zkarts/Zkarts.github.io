@@ -3,6 +3,19 @@
 
 @import "{{ site.theme }}";
 
+.wrapper {
+	width: 70%;
+}
+.wrapper header {
+	width: 28%;
+	position: static;
+}
+.wrapper section {
+	width: 70%;
+	margin-left: 2%;
+	display: inline-block;
+}
+
 .post-image {
 	margin-top: 10px;
 	display: block;
@@ -24,8 +37,8 @@ li.post {
 	position: relative;
 }
 .post {
-	width: 238px;
-	height: 150px;
+	width: 260px;
+	height: 170px;
 	border-radius: 7px;
 	overflow: hidden;
 }
@@ -40,6 +53,7 @@ li.post {
 	left: 0;
 	padding: 0 5px;
 	background-color: rgb(200, 200, 200, 0.7);
+	width: 100%;
 }
 
 .grow {
