@@ -6,14 +6,16 @@
 .wrapper {
 	width: 70%;
 }
-.wrapper header {
-	width: 28%;
-	position: static;
-}
-.wrapper section {
-	width: 70%;
-	margin-left: 2%;
-	display: inline-block;
+@media (min-width: 961px) {
+	.wrapper header {
+		width: 28%;
+		position: static;
+	}
+	.wrapper section {
+		width: 70%;
+		margin-left: 2%;
+		display: inline-block;
+	}
 }
 
 .post-image {
