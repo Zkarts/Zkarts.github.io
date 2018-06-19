@@ -1,5 +1,7 @@
 <a href="{{ post.url }}">
-  {% if post.images %}
+  {% if post.preview %}
+    <img src="{{ post.preview | absolute_url }}">
+  {% elsif post.images %}
     {% for image in post.images limit:1 %}
       <img src="{{ image | absolute_url }}">
     {% endfor %}

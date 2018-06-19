@@ -5,6 +5,7 @@ date: 2015-01-20
 tags: game
 images:
  - "/assets/images/trunk.png"
+preview: "assets/images/trunk-thumb.png"
 download: "/assets/content/Trunk final.zip"
 read:
 infourl:

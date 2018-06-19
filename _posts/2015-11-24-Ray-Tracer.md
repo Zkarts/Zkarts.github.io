@@ -5,6 +5,7 @@ date: 2015-11-24
 tags: graphics
 images:
  - "assets/images/path tracer.png"
+preview: "assets/images/path tracer-thumb.png"
 download:
 read: "/assets/content/Ray Tracer vs Path Tracer.pdf"
 infourl:

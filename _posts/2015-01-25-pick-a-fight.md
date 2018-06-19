@@ -5,6 +5,7 @@ date: 2015-01-25
 tags: game
 images:
  - "/assets/images/pick-a-fight.png"
+preview:
 download: "/assets/content/Pick a Fight.zip"
 read:
 keywords: "Game Jam, Unity, PC, C#, Game Design, 2D art"
