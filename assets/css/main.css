@@ -6,6 +6,9 @@
 .wrapper {
 	width: 70%;
 }
+.wrapper header {
+	width: 100%;
+}
 @media (min-width: 961px) {
 	.wrapper header {
 		width: 28%;
