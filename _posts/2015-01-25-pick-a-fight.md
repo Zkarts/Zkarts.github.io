@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Global Game Jam 2015: Pick a Fight"
-date: 2018-06-11
+date: 2015-01-25
 tags: game
 images:
  - "/assets/images/pick-a-fight.png"
@@ -13,7 +13,7 @@ description: "Requires 2 controllers"
 ---
 
 Made in 48 hours, Pick a Fight is a multiplayer mining and tower defence mash-up, using the contrast between the calm, slow-paced mining and the high tension tower defence to increase the tension between the players. Mining allows for stronger shooting and shooting allows for faster mining. However, should you not pay attention, the unicorn animals will destroy your castle and you will lose.
----
+<hr/>
 I created the mining game and worked on the game design, 2D art and the particle effects.
 
 <div class="video-container">

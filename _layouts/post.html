@@ -20,8 +20,12 @@ layout: default
 	<br>
   {% endif %}
   
+  {% if page.infourl or page.download or page.read %}
+	<br>
+  {% endif %}
+  
   {% if page.keywords %}
-  	<i>{{ page.keywords }}</i>
+  	<b><i>{{ page.keywords }}</i></b>
 	<br>
   {% endif %}
   
