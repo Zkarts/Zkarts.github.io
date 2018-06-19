@@ -15,6 +15,16 @@ layout: default
 	<br>
   {% endif %}
   
+  {% if page.read %}
+  	<a href="{{ page.read | absolute_url }}" target="_blank">View <strong>PDF File</strong></a>
+	<br>
+  {% endif %}
+  
+  {% if page.keywords %}
+  	<i>{{ page.keywords }}</i>
+	<br>
+  {% endif %}
+  
   {% if page.description %}
   	<i>{{ page.description }}</i>
 	<br>
