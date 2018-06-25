@@ -5,7 +5,7 @@ date: 2012-12-11
 tags: game
 images:
  - "/assets/images/tanks.png"
-preview: "assets/images/tanks.png"
+preview: "assets/images/tanks-thumb.png"
 download:
 read:
 infourl:
