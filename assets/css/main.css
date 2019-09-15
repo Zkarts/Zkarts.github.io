@@ -58,6 +58,10 @@ li.post {
 	height: 100%;
 }
 
+.infourl {
+	text-decoration: underline;
+}
+
 .overlay-text {
 	position: absolute;
 	bottom: 0;
