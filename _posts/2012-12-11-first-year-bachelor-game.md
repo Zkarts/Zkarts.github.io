@@ -4,8 +4,8 @@ title: "Bachelor First Year Project: Pudding Protectors"
 date: 2012-12-11
 tags: game
 images:
- - "/assets/images/tanks.png"
-preview: "assets/images/tanks-thumb.png"
+ - "/assets/images/tanks.jpg"
+preview: "assets/images/tanks-thumb.jpg"
 download:
 read:
 infourl:

@@ -4,9 +4,9 @@ title: "Into the Light"
 date: 2019-01-19
 tags: game
 images:
- - "/assets/images/light-and-dark.png"
- - "/assets/images/rig.png"
-preview: "assets/images/light-and-dark-thumb.png"
+ - "/assets/images/light-and-dark.jpg"
+ - "/assets/images/rig.jpg"
+preview: "assets/images/light-and-dark-thumb.jpg"
 download:
 read:
 infourl:

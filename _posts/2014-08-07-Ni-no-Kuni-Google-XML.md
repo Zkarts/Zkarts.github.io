@@ -4,7 +4,7 @@ title: "Ni no Kuni Fan Translation Tools"
 date: 2014-08-07
 tags: tools
 images:
-preview: "assets/images/ni-no-kuni-thumb.png"
+preview: "assets/images/ni-no-kuni-thumb.jpg"
 download:
 read:
 infourl:

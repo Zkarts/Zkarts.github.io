@@ -4,8 +4,8 @@ title: "Minor Game Design, Design for Space Game: Trunk"
 date: 2015-01-20
 tags: game
 images:
- - "/assets/images/trunk.png"
-preview: "assets/images/trunk-thumb.png"
+ - "/assets/images/trunk.jpg"
+preview: "assets/images/trunk-thumb.jpg"
 download: "/assets/content/Trunk final.zip"
 read:
 infourl:

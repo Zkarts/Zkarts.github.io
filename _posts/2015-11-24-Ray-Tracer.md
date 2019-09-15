@@ -4,8 +4,8 @@ title: "Advanced Graphics: Ray Tracer vs Path Tracer"
 date: 2015-11-24
 tags: graphics
 images:
- - "assets/images/path tracer.png"
-preview: "assets/images/path tracer-thumb.png"
+ - "assets/images/path tracer.jpg"
+preview: "assets/images/path tracer-thumb.jpg"
 download:
 read: "/assets/content/Ray Tracer vs Path Tracer.pdf"
 infourl:

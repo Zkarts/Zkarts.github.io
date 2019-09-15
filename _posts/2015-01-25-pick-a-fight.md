@@ -4,7 +4,7 @@ title: "Global Game Jam 2015: Pick a Fight"
 date: 2015-01-25
 tags: game
 images:
- - "/assets/images/pick-a-fight.png"
+ - "/assets/images/pick-a-fight.jpg"
 preview:
 download: "/assets/content/Pick a Fight.zip"
 read:
