@@ -1,15 +1,13 @@
 <a href="{{ post.url }}">
-  <div style="background-image: url(
   {% if post.preview %}
-    "{{ post.preview | absolute_url }}"
+    <div style="background-image: url("{{ post.preview | absolute_url }}")">
   {% elsif post.images %}
     {% for image in post.images limit:1 %}
-      "{{ image | absolute_url }}"
+      <div style="background-image: url("{{ image | absolute_url }}")">
     {% endfor %}
   {% else %}
-    "/assets/images/placeholder.jpg"
+    <div style="background-image: url("/assets/images/placeholder.jpg")">
   {% endif %}
-  )">
     <b class="overlay-text">{{ post.title }}</b>
   </div>
 </a>
