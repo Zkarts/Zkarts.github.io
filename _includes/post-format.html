@@ -10,4 +10,13 @@
   {% endif %}
     <b class="overlay-text">{{ post.title }}</b>
   </div>
+  <div>
+	<ul class="tag-list">
+	  {% if post.tags %}
+	    {% for tag in post.tags limit:1 %}
+		  <li class="tag-pill" >({{ tag }}</li>>
+	    {% endfor %}
+	  {% endif %}
+	</ul>
+  </div>
 </a>
