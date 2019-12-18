@@ -1,6 +1,6 @@
 <a href="{{ post.url }}">
   {% if post.preview %}
-    <div style="background-image: url({{ post.preview | absolute_url }})">
+    <div class="post-preview-box" style="background-image: url({{ post.preview | absolute_url }})">
   {% elsif post.images %}
     {% for image in post.images limit:1 %}
       <div style="background-image: url({{ image | absolute_url }})">
