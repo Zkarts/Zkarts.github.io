@@ -8,13 +8,13 @@
   {% else %}
     <div class="post-preview-box" style="background-image: url(/assets/images/placeholder.jpg)">
   {% endif %}
-    <b class="overlay-text">{{ post.title }}</b>
+    <b class="post-preview-text">{{ post.title }}</b>
   </div>
   <div>
 	<ul class="tag-list">
 	  {% if post.tags %}
 	    {% for tag in post.tags %}
-		  <li class="tag-pill" >{{ tag | slugify: "none" }} or {{ tag }}</li>
+		  <li class="tag-pill" >{{ tag | slugify: "none" }}</li>
 	    {% endfor %}
 	  {% endif %}
 	</ul>
