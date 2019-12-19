@@ -75,7 +75,7 @@ li.post {
 .post-preview-box {
 	display: flex;
 	height: calc(var(--post-height) - var(--post-tags-height));
-	background-size: auto 100%;
+	background-size: var(--post-width) 100%;
 }
 
 .post-preview-text {
