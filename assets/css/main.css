@@ -97,15 +97,15 @@ li.post {
 	background-color: #ccc;
 	padding: 2px;
 }
+.tag-list-large {
+	padding: 0 10px;
+}
 
 .tag-pill {
 	border: 1px solid #aaa;
 	
 	text-align: center;
 	text-decoration: none;
-	
-	padding: 2px 5px;
-	padding-top: 0;
 	
 	display: inline-block;
 	vertical-align: top;
@@ -119,16 +119,20 @@ li.post {
 	
 	font-size: x-small;
 	
+	padding: 2px 5px;
+	padding-top: 0;	
 	margin-right: 2px;
 	margin-bottom: 5px;
 }
 .tag-pill-large {
 	background-color: #bbb;
-	border-radius: 15px;
+	border-radius: 20px;
 	
-	font-size: larger;
+	font-size: medium;
 	
-	margin-right: 10px;
+	padding: 4px 7px;
+	padding-top: 2px;
+	margin-right: 7px;
 	margin-bottom: 10px;
 }
 
