@@ -11,7 +11,7 @@ title: Erik Molenaar
 {% if site.tags %}
 <h4>All tags</h4>
   {% for tag in site.tags %}
-    <span>full: {{tag}} || and name only: {{ tag[0] | slugify: "none" }}</li>
+    <p>{{ tag[0] | slugify: "none" }}</p>
   {% endfor %}
 {% endif %}
 
