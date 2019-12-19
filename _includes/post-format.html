@@ -10,11 +10,11 @@
   {% endif %}
     <b class="post-preview-text">{{ post.title }}</b>
   </div>
-  <div>
-	<ul class="tag-list">
+  <div class="tag-container">
+	<ul class="tag-list tag-list-postpreview">
 	  {% if post.tags %}
 	    {% for tag in post.tags %}
-		  <li class="tag-pill" >{{ tag | slugify: "none" }}</li>
+		  <li class="tag-pill tag-pill-postpreview" >{{ tag | slugify: "none" }}</li>
 	    {% endfor %}
 	  {% endif %}
 	</ul>

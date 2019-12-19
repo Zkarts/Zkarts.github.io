@@ -85,32 +85,51 @@ li.post {
 	align-self: flex-end;
 }
 
+.tag-container {
+	min-width: var(--post-width);
+}
+
 .tag-list {
-	background-color: #ccc;
 	list-style: none;
 	margin: 0;
+}
+.tag-list-postpreview {
+	background-color: #ccc;
 	padding: 2px;
 }
 
 .tag-pill {
+	border: 1px solid #aaa;
+	
+	text-align: center;
+	text-decoration: none;
+	
+	padding: 2px 5px;
+	padding-top: 0;
+	
+	display: inline-block;
+	vertical-align: top;
+}
+.tag-pill-postpreview {
 	color: inherit !important;
 	font-weight: normal !important;
 	
 	background-color: #bbb;
-	border: 1px solid #aaa;
 	border-radius: 10px;
 	
 	font-size: x-small;
-	text-align: center;
-	text-decoration: none;
 	
-	display: inline-block;
-	vertical-align: top;
-	
-	padding: 2px 5px;
-	padding-top: 0;
 	margin-right: 2px;
 	margin-bottom: 5px;
+}
+.tag-pill-large {
+	background-color: #bbb;
+	border-radius: 15px;
+	
+	font-size: larger;
+	
+	margin-right: 10px;
+	margin-bottom: 10px;
 }
 
 .grow {
