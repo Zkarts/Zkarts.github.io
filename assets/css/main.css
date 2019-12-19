@@ -93,6 +93,9 @@ li.post {
 }
 
 .tag-pill {
+	color: inherit !important;
+	font-weight: normal !important;
+	
 	background-color: #bbb;
 	border: 1px solid #aaa;
 	border-radius: 10px;
