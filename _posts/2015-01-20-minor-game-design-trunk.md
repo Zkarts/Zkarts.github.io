@@ -2,7 +2,7 @@
 layout: post
 title: "Minor Game Design, Design for Space Game: Trunk"
 date: 2015-01-20
-tags: [unity, c#, pc, game]
+tags: [Unity, C#, PC, Game]
 images:
  - "/assets/images/trunk.jpg"
 preview: "assets/images/trunk-thumb.jpg"

@@ -14,7 +14,7 @@
 	<ul class="tag-list">
 	  {% if post.tags %}
 	    {% for tag in post.tags %}
-		  <li class="tag-pill" >({{ tag[0] | slugify }}</li>
+		  <li class="tag-pill" >{{ tag.name | slugify }} or {{ tag.slug }} or {{ tag.slug | slugify }}</li>
 	    {% endfor %}
 	  {% endif %}
 	</ul>
