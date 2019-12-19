@@ -3,6 +3,12 @@
 
 @import "{{ site.theme }}";
 
+:root {
+	--post-width: 260px;
+	--post-height: 190px;
+	--post-tags-height: 27px;
+}
+
 .wrapper {
 	width: 70%;
 }
@@ -55,28 +61,27 @@ li.post {
 	text-align: left;
 }
 .post {
-	width: 260px;
-	height: 190px;
+	width: var(--post-width);
+	height: var(--post-height);
 	border-radius: 7px;
 	overflow: hidden;
 }
 
 .post-hidden {
 	width: 0 !important;
-	height: 0 !important;
 	margin: 0 !important;
 }
 
 .post-preview-box {
 	display: flex;
-	height: 167px;
+	height: calc(var(--post-height) - var(--post-tags-height));
 	background-size: 100% 100%;
 }
 
-.overlay-text {
+.post-preview-text {
+	width: var(--post-width);
 	padding: 0 5px;
 	background-color: rgba(200, 200, 200, 0.8);
-	width: 100%;
 	align-self: flex-end;
 }
 
@@ -106,7 +111,7 @@ li.post {
 }
 
 .grow {
-  transition: all .2s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 .grow:hover {
   transform: scale(1.1);
