@@ -2,7 +2,7 @@
 layout: post
 title: "Ni no Kuni Fan Translation Tools"
 date: 2014-08-07
-tags: tools
+tags: [C#, Tools]
 images:
 preview: "assets/images/ni-no-kuni-thumb.jpg"
 download:

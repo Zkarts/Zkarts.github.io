@@ -2,7 +2,7 @@
 layout: post
 title: "Advanced Graphics: Ray Tracer vs Path Tracer"
 date: 2015-11-24
-tags: graphics
+tags: [C++, Graphics, Featured]
 images:
  - "assets/images/path tracer.jpg"
 preview: "assets/images/path tracer-thumb.jpg"

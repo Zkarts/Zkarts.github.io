@@ -2,7 +2,7 @@
 layout: post
 title: "Bachelor First Year Project: Pudding Protectors"
 date: 2012-12-11
-tags: game
+tags: [C#, XNA, Game, PC, Art]
 images:
  - "/assets/images/tanks.jpg"
 preview: "assets/images/tanks-thumb.jpg"

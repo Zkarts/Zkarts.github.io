@@ -8,6 +8,13 @@ title: Erik Molenaar
 
 <a onclick="HideAllPosts()" style="margin-bottom: 50px;">Hide most!</a>
 
+{% if site.tags %}
+<h4>All tags</h4>
+  {% for tag in site.tags %}
+    <span>full: {{tag}} || and name only: {{ tag[0] | slugify: "none" }}</li>
+  {% endfor %}
+{% endif %}
+
 <ul class="no-padding post-list">
   {% for post in site.posts %}
     <li class="post grow">

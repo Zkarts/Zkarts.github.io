@@ -79,7 +79,7 @@ li.post {
 }
 
 .post-preview-text {
-	width: var(--post-width);
+	min-width: var(--post-width);
 	padding: 0 5px;
 	background-color: rgba(200, 200, 200, 0.8);
 	align-self: flex-end;

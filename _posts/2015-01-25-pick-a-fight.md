@@ -2,7 +2,7 @@
 layout: post
 title: "Global Game Jam 2015: Pick a Fight"
 date: 2015-01-25
-tags: game
+tags: [C#, Game Jam, Unity, PC, Game Design, Art]
 images:
  - "/assets/images/pick-a-fight.jpg"
 preview:
