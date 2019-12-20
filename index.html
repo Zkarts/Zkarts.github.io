@@ -6,14 +6,12 @@ title: Erik Molenaar
 <script type="text/javascript" src="assets/js/tagsort.js"></script>
 <noscript>Sorry, your browser does not support JavaScript! Functionality may be limited.</noscript>
 
-<a onclick="HideAllPosts()" style="margin-bottom: 50px;">Hide most!</a>
-
 {% if site.tags %}
   <h4>All tags</h4>
   <ul class="tag-list tag-list-large">
     {% for tag in site.tags %}
       <li class="tag-pill tag-pill-large">
-	    <a href="#">{{ tag[0] | slugify: "none" }}</a>
+	    <a href="#" onclick="OnClickTagButton(this)">{{ tag[0] | slugify: "none" }}</a>
       </li>
     {% endfor %}
   </ul>
