@@ -1,5 +1,5 @@
 function OnClickCollapseBox(el) {
-	if (el.classList.indexOf('collapse-box-hidden') == -1) {
+	if (el.classList.contains('collapse-box-hidden') == -1) {
 		el.classList.remove('collapse-box-shown');
 		el.classList.add('collapse-box-hidden');
 	}
