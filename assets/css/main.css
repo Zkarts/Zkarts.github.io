@@ -85,6 +85,29 @@ li.post {
 	align-self: flex-end;
 }
 
+.collapse-box {
+    margin: .5em 1em;
+    padding: 1em;
+}
+.collapse-box-hidden {
+    font-size: 0;
+    margin: 0;
+    opacity: 0;
+    padding: 0;
+    /* fade out, then shrink */
+    transition: opacity .25s,
+                font-size .5s .25s,
+                margin .5s .25s,
+                padding .5s .25s;
+}
+.collapse-box-shown {
+    /* unshrink, then fade in */
+    transition: font-size .25s,
+                margin .25s,
+                padding .25s,
+                opacity .5s .25s;
+}
+
 .tag-container {
 	min-width: var(--post-width);
 }
