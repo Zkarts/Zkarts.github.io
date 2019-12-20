@@ -1,11 +1,11 @@
 function OnClickCollapseBox(el) {
-	if (el.classList.contains('collapse-box-hidden') == -1) {
-		el.classList.remove('collapse-box-shown');
-		el.classList.add('collapse-box-hidden');
+	if (el.classList.contains('collapse-box-hidden')) {
+		el.classList.remove('collapse-box-hidden');
+		el.classList.add('collapse-box-shown');
 	}
 	else {
-		el.classList.remove('collapse-box-hidden');
-		el.classList.add('collapse-box-shown');		
+		el.classList.remove('collapse-box-shown');
+		el.classList.add('collapse-box-hidden');
 	}
 }
 
