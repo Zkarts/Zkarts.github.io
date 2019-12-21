@@ -1,14 +1,36 @@
-function OnClickCollapseBox(el) {
-	if (el.classList.contains('collapse-box-hidden')) {
-		el.classList.remove('collapse-box-hidden');
-		el.classList.add('collapse-box-shown');
+function ToggleVisibility(el) {
+	if (elem.classList.contains('collapse-box-shown')) {
+		hide(el);
 	}
 	else {
-		el.classList.remove('collapse-box-shown');
-		el.classList.add('collapse-box-hidden');
+		show(el);
 	}
-}
+};
 
+function Show(el, time) {
+	el.style.display = 'block';
+	var height = el.scrollHeight + 'px';
+	el.style.display = '';
+		
+	el.classList.add('collapse-box-shown');
+	el.style.height = height;
+
+	window.setTimeout(function () {
+		el.style.height = '';
+	}, time);
+};
+
+function Hide(el, time) {
+	el.style.height = el.scrollHeight + 'px';
+
+	window.setTimeout(function () {
+		el.style.height = '0';
+	}, 1);
+
+	window.setTimeout(function () {
+		el.classList.remove('is-visible');
+	}, time);
+};
 
 function OnClickTagButton(el) {
 	ShowAllPosts();

@@ -7,10 +7,10 @@ title: Erik Molenaar
 <noscript>Sorry, your browser does not support JavaScript! Functionality may be limited.</noscript>
 
 {% if site.tags %}
-  <a href="#" onclick="OnClickCollapseBox(document.getElementById('tag-box'))">
+  <a href="#" onclick="ToggleVisibility(document.getElementById('tag-box'))">
     <h4>Filters</h4>
   </a>
-  <div id="tag-box" class="collapse-box collapse-box-hidden">
+  <div id="tag-box" class="collapse-box">
 	<ul class="tag-list tag-list-large">
 	  {% for tag in site.tags %}
 		<li class="tag-pill tag-pill-large">
