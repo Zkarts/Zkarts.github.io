@@ -100,7 +100,7 @@ li.post {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
-.collapse-box-linked {
+.collapse-box-content {
 	background-color: lightgray;
 	border-radius: 0 0 10px 10px;
 	border: 1px solid gray;

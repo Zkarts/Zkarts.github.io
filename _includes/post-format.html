@@ -1,4 +1,5 @@
-<a href="{{ post.url }}" data-tags="{{ post.tags | array_to_sentence_string: '' }}">
+{% capture post-tags %}{{ post.tags | array_to_sentence_string: '' }}{% endcapture %}
+<a href="{{ post.url }}" data-tags="{{ post-tags | slugify: 'none' }}">
   {% if post.preview %}
     <div class="post-preview-box" style="background-image: url({{ post.preview | absolute_url }})">
   {% elsif post.images %}
