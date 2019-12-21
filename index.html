@@ -24,11 +24,11 @@ title: Erik Molenaar
 	  <ul class="tag-list tag-list-large">
 	    {% for tag in site.tags %}
 		  {% capture tag-slug }{{ tag[0] | slugify: "none" }}{% endcapture %}
-	      {% if tag-slug != "featured" %}
+	      {% unless tag-slug contains "featured" %}
 		    <li class="tag-pill tag-pill-large">
 		      <a href="#" onclick="FilterPosts(this.textContent)">{{ tag-slug }}</a>
 		    </li>
-		  {% endif %}
+		  {% endunless %}
 	    {% endfor %}
 	  </ul>
 	</div>
