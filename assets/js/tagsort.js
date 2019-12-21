@@ -7,9 +7,9 @@ function ToggleVisibility(self, target) {
     }
 }
 
-function OnClickTagButton(el) {
+function FilterPosts(tag) {
 	ShowAllPosts();
-	HidePostsWithoutTag(el.textContent);
+	HidePostsWithoutTag(tag);
 }
 
 function ShowAllPosts() {
