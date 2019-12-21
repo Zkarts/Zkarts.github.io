@@ -15,7 +15,7 @@ function OnClickTagButton(el) {
 function ShowAllPosts() {
 	var posts = document.getElementsByClassName("post-hidden");
 	while (posts.length > 0) {
-		posts[i].classList.remove("post-hidden");
+		posts[0].classList.remove("post-hidden");
 	}
 }
 
