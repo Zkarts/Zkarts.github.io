@@ -3,6 +3,7 @@ layout: post
 title: "Into the Light"
 date: 2019-01-19
 tags: [C++, Unreal, PC, Game, Art, Game Design]
+featured:
 images:
  - "/assets/images/light-and-dark.jpg"
  - "/assets/images/rig.jpg"

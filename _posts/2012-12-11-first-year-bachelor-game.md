@@ -3,6 +3,7 @@ layout: post
 title: "Bachelor First Year Project: Pudding Protectors"
 date: 2012-12-11
 tags: [C#, XNA, Game, PC, Art]
+featured:
 images:
  - "/assets/images/tanks.jpg"
 preview: "assets/images/tanks-thumb.jpg"

@@ -6,6 +6,18 @@ title: Erik Molenaar
 <script type="text/javascript" src="assets/js/tagsort.js"></script>
 <noscript>Sorry, your browser does not support JavaScript! Functionality may be limited.</noscript>
 
+<h2>Featured</h2>
+<ul class="no-padding post-list">
+  {% for post in site.posts %}
+    {% if post.featured %}
+      <li class="post grow post-featured">
+        {% include post-format.html %}
+      </li>
+	{% endif %}
+  {% endfor %}
+</ul>
+
+<h2>All</h2>
 {% if site.tags %}
 <div style="margin-bottom: 10px;">
   <a href="#" onclick="ToggleVisibility(this, document.getElementById('tag-box'))">
@@ -17,18 +29,12 @@ title: Erik Molenaar
 	    <li class="tag-pill tag-pill-large">
 		  <a href="#" onclick="ShowAllPosts()">All</a>
 	    </li>
-	    <li class="tag-pill tag-pill-large">
-		  <a href="#" onclick="FilterPosts('featured')">Featured</a>
-	    </li>
       </ul>
 	  <ul class="tag-list tag-list-large">
 	    {% for tag in site.tags %}
-		  {% capture tag-slug }{{ tag[0] | slugify: "none" }}{% endcapture %}
-	      {% unless tag-slug contains "featured" %}
-		    <li class="tag-pill tag-pill-large">
-		      <a href="#" onclick="FilterPosts(this.textContent)">{{ tag-slug }}</a>
-		    </li>
-		  {% endunless %}
+		  <li class="tag-pill tag-pill-large">
+		    <a href="#" onclick="FilterPosts(this.textContent)">{{ tag[0] | slugify: "none" }}</a>
+		  </li>
 	    {% endfor %}
 	  </ul>
 	</div>

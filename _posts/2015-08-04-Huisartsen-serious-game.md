@@ -3,6 +3,7 @@ layout: post
 title: "Bachelor final project: Simulation Management game for GP's"
 date: 2015-08-04
 tags: [C#, Unity, Mobile]
+featured:
 images:
 preview:
 download:
