@@ -96,22 +96,17 @@ li.post {
 }
 
 .collapse-box {
-	display: none;
-	height: 0;
-	overflow: hidden;
-	transition: height 350ms ease-in-out;
-}
-.collapse-box-shown {
-	display: block;
-	height: auto;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
 .collapse-box-linked {
 	background-color: lightgray;
 	border-radius: 0 0 10px 10px;
 	border: 1px solid gray;
+	border-top: none;
 	
 	padding-top: 10px;
-	margin-bottom: 10px;
 }
 
 .tag-container {

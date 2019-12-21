@@ -1,36 +1,11 @@
-function ToggleVisibility(el) {
-	if (el.classList.contains('collapse-box-shown')) {
-		Hide(el);
-	}
-	else {
-		Show(el);
-	}
-};
-
-function Show(el, time) {
-	el.style.display = 'block';
-	var height = el.scrollHeight + 'px';
-	el.style.display = '';
-		
-	el.classList.add('collapse-box-shown');
-	el.style.height = height;
-
-	window.setTimeout(function () {
-		el.style.height = '';
-	}, time);
-};
-
-function Hide(el, time) {
-	el.style.height = el.scrollHeight + 'px';
-
-	window.setTimeout(function () {
-		el.style.height = '0';
-	}, 1);
-
-	window.setTimeout(function () {
-		el.classList.remove('is-visible');
-	}, time);
-};
+function ToggleVisibility(self, target) {
+	self.classList.toggle("active");
+    if (target.style.maxHeight){
+      target.style.maxHeight = null;
+    } else {
+      target.style.maxHeight = target.scrollHeight + "px";
+    }
+}
 
 function OnClickTagButton(el) {
 	ShowAllPosts();
