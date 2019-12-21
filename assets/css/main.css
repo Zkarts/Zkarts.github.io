@@ -172,6 +172,10 @@ li.post {
 	text-decoration: underline;
 }
 
+.clickable {
+	cursor: pointer;
+}
+
 .no-padding {
 	padding: 0;
 }

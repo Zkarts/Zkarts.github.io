@@ -20,20 +20,20 @@ title: Erik Molenaar
 <h2>All</h2>
 {% if site.tags %}
 <div style="margin-bottom: 10px;">
-  <a href="#" onclick="ToggleVisibility(this, document.getElementById('tag-box'))">
+  <a class="clickable" onclick="ToggleVisibility(this, document.getElementById('tag-box'))">
     <h3 class="link-box">Filters</h3>
   </a>
   <div id="tag-box" class="collapse-box">
     <div class="collapse-box-content">
 	  <ul class="tag-list tag-list-large">
 	    <li class="tag-pill tag-pill-large">
-		  <a href="#" onclick="ShowAllPosts()">All</a>
+		  <a class="clickable" onclick="ShowAllPosts()">All</a>
 	    </li>
       </ul>
 	  <ul class="tag-list tag-list-large">
 	    {% for tag in site.tags %}
 		  <li class="tag-pill tag-pill-large">
-		    <a href="#" onclick="FilterPosts(this.textContent)">{{ tag[0] | slugify: "none" }}</a>
+		    <a class="clickable" onclick="FilterPosts(this.textContent)">{{ tag[0] | slugify: "none" }}</a>
 		  </li>
 	    {% endfor %}
 	  </ul>
