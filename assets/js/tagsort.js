@@ -1,9 +1,9 @@
 function ToggleVisibility(el) {
 	if (el.classList.contains('collapse-box-shown')) {
-		hide(el);
+		Hide(el);
 	}
 	else {
-		show(el);
+		Show(el);
 	}
 };
 

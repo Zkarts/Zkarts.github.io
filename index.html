@@ -8,9 +8,9 @@ title: Erik Molenaar
 
 {% if site.tags %}
   <a href="#" onclick="ToggleVisibility(document.getElementById('tag-box'))">
-    <h4>Filters</h4>
+    <h4 class="link-box">Filters</h4>
   </a>
-  <div id="tag-box" class="collapse-box">
+  <div id="tag-box" class="collapse-box collapse-box-linked">
 	<ul class="tag-list tag-list-large">
 	  {% for tag in site.tags %}
 		<li class="tag-pill tag-pill-large">

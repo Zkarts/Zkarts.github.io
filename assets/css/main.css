@@ -85,6 +85,16 @@ li.post {
 	align-self: flex-end;
 }
 
+.link-box {
+	background-color: lightgray;
+	color: #267CB9;
+	
+	padding: 10px;
+	margin-bottom: 0;
+	border-radius: 10px 10px 0 0;
+	border: 1px solid gray;
+}
+
 .collapse-box {
 	display: none;
 	height: 0;
@@ -94,6 +104,14 @@ li.post {
 .collapse-box-shown {
 	display: block;
 	height: auto;
+}
+.collapse-box-linked {
+	background-color: lightgray;
+	border-radius: 0 0 10px 10px;
+	border: 1px solid gray;
+	
+	padding-top: 10px;
+	margin-bottom: 10px;
 }
 
 .tag-container {
@@ -113,7 +131,7 @@ li.post {
 }
 
 .tag-pill {
-	border: 1px solid #aaa;
+	border: 1px solid #999;
 	
 	text-align: center;
 	text-decoration: none;
