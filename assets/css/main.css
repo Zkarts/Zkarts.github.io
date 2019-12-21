@@ -106,7 +106,7 @@ li.post {
 	border: 1px solid gray;
 	border-top: none;
 	
-	padding-top: 10px;
+	padding: 10px;
 }
 
 .tag-container {
@@ -122,7 +122,7 @@ li.post {
 	padding: 2px;
 }
 .tag-list-large {
-	padding: 0 10px;
+	padding-bottom: 0;
 }
 
 .tag-pill {

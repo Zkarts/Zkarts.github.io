@@ -13,6 +13,9 @@ title: Erik Molenaar
   </a>
   <div id="tag-box" class="collapse-box">
 	<ul class="tag-list tag-list-large collapse-box-content">
+	  <li class="tag-pill tag-pill-large">
+		<a href="#" onclick="ShowAllPosts()">All</a>
+	  </li>
 	  {% for tag in site.tags %}
 		<li class="tag-pill tag-pill-large">
 		  <a href="#" onclick="OnClickTagButton(this)">{{ tag[0] | slugify: "none" }}</a>
