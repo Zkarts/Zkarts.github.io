@@ -22,7 +22,7 @@ function ShowAllPosts() {
 function HidePostsWithoutTag(tag) {
 	var posts = document.getElementsByClassName("post");
 	for	(var i = 0; i < posts.length; i++) {
-		if (post.classList.contains("post-featured")) {
+		if (posts[i].classList.contains("post-featured")) {
 			continue;
 		}
 		
