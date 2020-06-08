@@ -6,7 +6,8 @@ tags: [C#, Unity, SOLID, Mobile, Game]
 featured: yes
 images: "/assets/images/whac-a-mole.jpg"
 preview: "assets/images/whac-a-mole-thumb.jpg"
-download: https://github.com/Zkarts/WhacAMole
+download: 
+repourl: https://github.com/Zkarts/WhacAMole
 read:
 infourl:
 keywords: "Mobile, Unity, SOLID"

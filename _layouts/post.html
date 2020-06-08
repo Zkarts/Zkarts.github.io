@@ -20,7 +20,12 @@ layout: default
 	<br>
   {% endif %}
   
-  {% if page.infourl or page.download or page.read %}
+  {% if page.repourl %}
+  	<a class="infourl" href="{{ page.repolink }}"><i>Go to <strong>Repository</strong></i></a>
+	<br>
+  {% endif %}
+  
+  {% if page.infourl or page.download or page.read or page.repourl %}
 	<br>
   {% endif %}
   
