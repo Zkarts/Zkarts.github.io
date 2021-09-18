@@ -15,14 +15,14 @@ body {
 }
 
 a {
-	color: #0e609a;
+	color: #095388;
 }
 a:hover {
-	color: #0e609a;
+	color: #095388;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	color: #ccc;
+	color: #bbb;
 }
 
 .wrapper {
@@ -151,8 +151,7 @@ li.post {
 	vertical-align: top;
 }
 .tag-pill-postpreview {
-	color: inherit !important;
-	font-weight: normal !important;
+	font-weight: bold;
 	
 	background-color: #666;
 	border-radius: 10px;
