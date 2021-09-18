@@ -5,9 +5,10 @@ date: 2019-01-19
 tags: [C++, Unreal, PC, Game, Art, Game Design]
 featured:
 images:
- - "/assets/images/light-and-dark.jpg"
+ - "/assets/images/low-poly-fire.jpg"
  - "/assets/images/rig.jpg"
-preview: "assets/images/light-and-dark-thumb.jpg"
+ - "/assets/images/thorns.gif"
+preview: "assets/images/low-poly-fire-thumb.png"
 download:
 read:
 infourl:
@@ -15,13 +16,17 @@ keywords: "Maya, Unreal, C++, 3D modeling, rigging, animation, PC, Game"
 description: "Exploring different parts of game development to learn ever more. This time, digging into Unreal with C++ to create a game in which I want to play with light."
 ---
 
-My primary game development experience lies with the Unity Engine. I touched Game Maker as well, but a big name I still wanted to dig into was the Unreal Engine. So that's just what I did.
+My first larger practice project to learn all facets of Unreal Engine 4.
 
 ### Exploring the 3D Asset Pipeline
-I set this project up so that I can explore many different aspects that I was not too familiar with yet, like fully going through the 3D asset pipeline from modeling in Maya, rigging and texturing. I aim for a low-poly look and feel and want to texture my character and world in full slabs of colour through a colour palette texture with just a couple of colours. Rigging is also a very interesting issue and I learned the hard way that you need to keep rigging and animation in mind in the modeling itself and that not everything animates well. Still, it's a very interesting venture to even just learn about rigging options, possibilities and what the effects are on the output and the assets that make it to the development department.
+Throughout this project, I intended to broaden my knowledge of all aspects of game dev, from level design, getting to know the engine, getting familiar with programming in this environment, as well as making my way through the 3D art pipeline from start to end.
+I made the conscious decision to take some shortcuts in the art department. The first was largely foregoing the tedium of retopology by sculpting in ZBrush and decimating the model down to a somewhat chaotic looking low-poly model. For elements that needed to animate, I adjusted them in Maya, rigged them and got to animating. The second shortcut was in texturing, where I texture by assigning large slabs of the model to one pixel in a custom colour palette texture.
 
 ### C++ and Unreal
-I wanted to get to work in C++ again, so I combined that with working in the Unreal Engine, which had me learn both how Unreal worked and how C++ works within Unreal. My primary aim is to use the C++ side of Unreal, but I found out more and more that although I was initially adverse to Unreal Blueprints, their visual scripting tool, the big advantage of what Unreal offers is the ease of blueprints combined with the more complex functionality that can be written in C++. Those functions can also be exposed to Blueprints, so I fully intend to dive into the perfect marriage between these different options.
+This project allowed me to discover Unreal and brush up on my C++ skills. Along the way I discovered the workings of Unreal, including the power of Blueprints. This provided a good opportunity to dive into setting up a good mix between C++ and Blueprints to make the most of the engine.
 
 ### Lighting and Achieving Darkness
-Default Unreal startup projects generally come with a number of pre-defined settings, which is great to get started, but I soon found out that achieving complete darkness is quite tough. It took quite a while to fiddle around and find settings that do not allow for cheating by changing screen brightness, contrast and/or gamma settings. There is actually a GDC talk from the developers of Below that deals with this exact issue as well, which was a big inspiration for me to get started on this project.
+With the idea of achieving complete darkness, I had to start by stripping out default Unreal startup projects settings like post processing effects and camera settings to adjust to darkness. There is actually a GDC talk from the developers of Below that deals with this exact issue as well, including not letting the player get around it through screen brightness or gamma settings, which was a big inspiration for me to get started on this project.
+
+### UE5 Upgrade
+With the release of Unreal Engine 5, the Lumen system provides exactly what I needed for this project and better matches my needs for what I envisioned for this project. I also still had problems with getting shadows on dynamic objects, so that was the decisive point that made me go through with the switch. It also improves this project from learning Unreal Engine 4, which I got quite comfortable with throughout this project and my work, to a chance at exploring Unreal Engine 5 as well.
