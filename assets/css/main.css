@@ -18,6 +18,10 @@ a {
 	color: #0e609a;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	color: #ccc;
+}
+
 .wrapper {
 	width: 70%;
 }
@@ -95,7 +99,7 @@ li.post {
 }
 
 .link-box {
-	background-color: gray;
+	background-color: #777;
 	color: #0e609a;
 	
 	padding: 10px;
@@ -127,7 +131,7 @@ li.post {
 	margin: 0;
 }
 .tag-list-postpreview {
-	background-color: #ccc;
+	background-color: #555;
 	padding: 2px;
 }
 .tag-list-large {
@@ -135,7 +139,7 @@ li.post {
 }
 
 .tag-pill {
-	border: 1px solid #777;
+	border: 1px solid #3a3a3a;
 	
 	text-align: center;
 	text-decoration: none;

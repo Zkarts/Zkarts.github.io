@@ -5,10 +5,10 @@ date: 2019-01-19
 tags: [C++, Unreal, PC, Game, Art, Game Design]
 featured:
 images:
+ - "/assets/images/thorns.gif"
  - "/assets/images/low-poly-fire.jpg"
  - "/assets/images/rig.jpg"
- - "/assets/images/thorns.gif"
-preview: "assets/images/low-poly-fire-thumb.png"
+preview: "assets/images/low-poly-fire-thumb.jpg"
 download:
 read:
 infourl:
