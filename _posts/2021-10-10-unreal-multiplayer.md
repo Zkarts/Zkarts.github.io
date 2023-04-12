@@ -4,8 +4,8 @@ title: "Unreal Online Multiplayer"
 date: 2021-10-10
 tags: [C++, Unreal, Online, Multiplayer, Networking]
 featured: yes
-images: "/assets/images/whac-a-mole.jpg"
-preview: "assets/images/whac-a-mole-thumb.jpg"
+images: ""
+preview: ""
 download: 
 read:
 infourl:
@@ -22,6 +22,3 @@ description: "As an exercise to learn Unreal Engine 4 multiplayer code in prepar
 	- Heroku, python flask app
 	- SocketIO
 	- UE4 SocketIO plugin
-
-### Did stuff
-things
