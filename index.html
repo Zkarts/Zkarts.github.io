@@ -32,7 +32,7 @@ title: Erik Molenaar
       </ul>
 	  <ul class="tag-list tag-list-large">
 	    {% for tag in site.tags %}
-		  <li class="tag-pill tag-pill-large">
+		  <li data-sort="{{ site.posts.size | minus: tag[1].size | prepend: '0000' | slice: -4, 4 }}" class="tag-pill tag-pill-large">
 		    <a class="clickable" onclick="FilterPosts(this.textContent)">{{ tag[0] | slugify: "none" }}</a>
 		  </li>
 	    {% endfor %}
