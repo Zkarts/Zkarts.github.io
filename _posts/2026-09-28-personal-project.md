@@ -1,15 +1,21 @@
 ---
 layout: post
-title: "State of Decay 2"
-date: 2024-07-15
-tags: [C++, Unreal, Networking, PC, Xbox, Game, Optimisation]
+title: "Unreal Learning Project"
+date: 2026-09-28
+tags: [C++, Unreal, PC, Game]
 featured:
 images:
-preview: "assets/images/sod2.png"
+- "assets/images/aq-dod.png"
+- "assets/images/aq-dod2.png"
+- "assets/images/aq-dod3.png"
+- "assets/images/aq-tonemapping.png"
+- "assets/images/aq-mass.png"
+- "assets/images/aq-shading.png"
+preview: "assets/images/aq-thumb.png"
 download:
 read:
 infourl:
-keywords: "Unreal, C++, PC, Xbox, Game"
+keywords: "C++, Unreal, Learning, PC, Game"
 description: "With a controller, move with the left stick, charge with the right stick and jump with A or Y.
 
 Player 1: WASD to move, IJKL to charge the dash, space to jump.
