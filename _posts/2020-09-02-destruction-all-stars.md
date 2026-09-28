@@ -1,0 +1,29 @@
+---
+layout: post
+title: "Destruction All-Stars"
+date: 2020-09-02
+tags: [C++, Unreal, PS5, Game]
+featured:
+images:
+preview: "assets/images/das.png"
+download:
+read:
+infourl:
+keywords: "Unreal, C++, Slate, gameplay, particles, PS5, Game"
+description: "With a controller, move with the left stick, charge with the right stick and jump with A or Y.
+
+Player 1: WASD to move, IJKL to charge the dash, space to jump.
+
+Player 2: Arrow keys to move, num pad arrow keys (8, 4, 6, 2) to charge the dash, num pad enter to jump."
+---
+
+I was looking for an arcade-style game that you could easily jump into with a friend for a couple of rounds and decided on a battle tops game. You can add up to four players (up to 2 using just one keyboard) who each choose their colour and then battle it out in the arena.
+
+### Battle Top Game
+Each battle top has something of a health bar indicating how fast they are still spinning and once that bar is empty, you lose. Another way to lose is by a ring-out, where another player knocks your battle top out of the arena bounds. A regular clash shoots both battle tops back, but it's also possible to charge up a dash by pulling back on the right thumbstick, like a catapult, and your top into the opponent, blasting them away much farther and faster. It's key that the players avoid this and get a jump functionality to attempt to do so, but one wrong move and you're gone.
+
+### 3D Modelling
+I wanted to try my hand at modelling actual game assets, so I made both the arena and the battle tops model with the Maya modelling software. I wanted to make the game look interesting and spectacular beyond that, however, so I dove into particle systems for good sparks that indicate the charging direction as well as clashes. Clashes are also paired with metallic clash sounds that vary in pitch and speed.
+
+### Investigation of Networking Systems
+As I was exploring the workings of multiplayer games and networking, I found a job! At that job I found out that the former Unity networking system is far from ideal and since I did find out the general way to go about setting up multiplayer networking, I moved on to other projects and my new job itself.
