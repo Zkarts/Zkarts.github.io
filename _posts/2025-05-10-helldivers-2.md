@@ -3,7 +3,7 @@ layout: post
 title: "Helldivers 2 Warbonds"
 date: 2025-05-10
 tags: [C++, PC, PlayStation, Xbox, Game]
-featured:
+featured: yes
 images:
 preview: "assets/images/helldivers.png"
 download:

@@ -3,7 +3,7 @@ layout: post
 title: "Unreal Learning Project"
 date: 2026-09-28
 tags: [C++, Unreal, PC, Game]
-featured:
+featured: yes
 images:
 - "assets/images/aq-dod.png"
 - "assets/images/aq-dod2.png"

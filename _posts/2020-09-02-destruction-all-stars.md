@@ -3,7 +3,7 @@ layout: post
 title: "Destruction All-Stars"
 date: 2020-09-02
 tags: [C++, Unreal, PS5, Game]
-featured:
+featured: yes
 images:
 preview: "assets/images/das.png"
 download:

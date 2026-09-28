@@ -3,7 +3,7 @@ layout: post
 title: "SOLID Unity Programming"
 date: 2019-12-22
 tags: [C#, Unity, SOLID, Mobile, Game]
-featured: yes
+featured:
 images: "/assets/images/whac-a-mole.jpg"
 preview: "assets/images/whac-a-mole-thumb.jpg"
 download: 

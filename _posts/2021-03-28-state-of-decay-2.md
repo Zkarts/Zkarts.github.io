@@ -3,7 +3,7 @@ layout: post
 title: "State of Decay 2"
 date: 2021-03-28
 tags: [C++, Unreal, Networking, PC, Xbox, Game, Optimisation]
-featured:
+featured: yes
 images:
 preview: "assets/images/sod2.png"
 download:
