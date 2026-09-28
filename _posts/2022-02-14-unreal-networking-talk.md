@@ -5,7 +5,7 @@ date: 2022-02-14
 tags: [C++, Unreal, Learning, Presentation]
 featured:
 images:
-preview: "unreal-networking-talk.png"
+preview: "assets/images/unreal-networking-talk.png"
 download: "assets/content/Unreal Multiplayer 101.pdf"
 read:
 infourl:
