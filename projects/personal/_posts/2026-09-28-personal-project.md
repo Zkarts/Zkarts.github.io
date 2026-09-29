@@ -2,7 +2,7 @@
 layout: post
 title: "Unreal Learning Project"
 date: 2026-09-28
-tags: [C++, Unreal, PC, Game]
+tags: [C++, Unreal, PC, Game, Multiplayer, Networking]
 featured: yes
 images:
 - "assets/images/aq-dod.png"
@@ -15,21 +15,41 @@ preview: "assets/images/aq-thumb.png"
 download:
 read:
 infourl:
-keywords: "C++, Unreal, Learning, PC, Game"
-description: "With a controller, move with the left stick, charge with the right stick and jump with A or Y.
-
-Player 1: WASD to move, IJKL to charge the dash, space to jump.
-
-Player 2: Arrow keys to move, num pad arrow keys (8, 4, 6, 2) to charge the dash, num pad enter to jump."
+keywords: "C++, Unreal, Learning, PC, Game, Multiplayer, Networking"
+description: "A personal game development project that grows along with me"
 ---
 
-I was looking for an arcade-style game that you could easily jump into with a friend for a couple of rounds and decided on a battle tops game. You can add up to four players (up to 2 using just one keyboard) who each choose their colour and then battle it out in the arena.
+This is a personal project I have been working on slowly for several years with a friend to explore the various systems and features of Unreal Engine, gradually improving our skills and sharing our knowledge. He does more work on the art and I tackle the more complex programming challenges.
 
-### Battle Top Game
-Each battle top has something of a health bar indicating how fast they are still spinning and once that bar is empty, you lose. Another way to lose is by a ring-out, where another player knocks your battle top out of the arena bounds. A regular clash shoots both battle tops back, but it's also possible to charge up a dash by pulling back on the right thumbstick, like a catapult, and your top into the opponent, blasting them away much farther and faster. It's key that the players avoid this and get a jump functionality to attempt to do so, but one wrong move and you're gone.
+### Work summary
+- Data-oriented programming
+- Unreal Engine 5's Mass system
+- Lighting management
+- UI setup and scaling
+	- Common UI
+- Network coding
+- Built ability system similar to Gameplay Ability System from scratch
+	- Includes networking capability
+	- Support for modular, reusable components
+- Implemented Dialogue system
+	- Fully animatable text in dialogue box
+- Post processing, render-target based Fog of War solution
+- FlowGraph inclusion for mission flow
+- Enhanced Input
+- Physically based lighting
+- Tonemapping
+- Post Processing shaders (toon shader, impact frame shader)
 
-### 3D Modelling
-I wanted to try my hand at modelling actual game assets, so I made both the arena and the battle tops model with the Maya modelling software. I wanted to make the game look interesting and spectacular beyond that, however, so I dove into particle systems for good sparks that indicate the charging direction as well as clashes. Clashes are also paired with metallic clash sounds that vary in pitch and speed.
+### Phase 1: Data-oriented Programming Vampire Survivors-like
+There have been various phases for this project. Initially, we wanted to build something akin to Vampire Survivors, a small, arcade-y game that we could play around with with characters and abilities. I utilised Unreal Engine 5's new ECS system called Mass to reach a large number of enemies and projectiles. This worked quite well, technically, but we ran into game design issues that Vampire Survivors essentially also has, where you can't actually do that much. So we pivoted to a more active gameplay style.
+Additionally, the Mass system worked, but it meant I was the only one who could work on the majority of the game's systems, because the friend I work on the project with is not a programmer. We wanted more interesting enemies to go with the improved agency of the player, which required switching away from the limiting system of Mass, which was primarily built for crowd simulation and not much more, back to the general Actor system of Unreal.
 
-### Investigation of Networking Systems
-As I was exploring the workings of multiplayer games and networking, I found a job! At that job I found out that the former Unity networking system is far from ideal and since I did find out the general way to go about setting up multiplayer networking, I moved on to other projects and my new job itself.
+### Phase 2: Twin-stick Shooter like Endless Dungeon
+We wanted more agency for the player, more choices during gameplay, as well as more control over the enemies. We landed on a style and system akin to the Endless Dungeon game, a character-based twin-stick shooter with active abilities. This is currently still our target, but we have been building various systems around this, such as, but not limited to:
+- Dialogue system
+- Fog of War system
+- Ability system
+- Toon shading
+- FlowGraph for mission flow
+
+We also decided we wanted the game to support online multiplayer, because it would be fun to play together, or with other friends, which meant keeping this in mind from the start and learning together to do this right. I could tap into previous experience both at work and my previous personal multiplayer project.

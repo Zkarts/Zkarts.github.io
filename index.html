@@ -24,6 +24,7 @@ title: Erik Molenaar
 	{% for cat in site.categories %}
 		{% if cat[0] != "projects" %}
 		  <li class="tag-pill tag-pill-large">
+			<span>{{ cat[0] }}</span>
 			<a class="clickable" onclick="FilterPostsByCat(this.textContent)">{{ cat[0] | slugify: "none" }}</a>
 		  </li>
 		{% endif %}

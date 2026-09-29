@@ -8,22 +8,24 @@ images:
 preview: "assets/images/sod2.png"
 download:
 read:
-infourl:
+infourl: "https://www.youtube.com/watch?v=MZnssLt-DnI"
 keywords: "Unreal, C++, PC, Xbox, Game, Optimisation"
-description: "With a controller, move with the left stick, charge with the right stick and jump with A or Y.
-
-Player 1: WASD to move, IJKL to charge the dash, space to jump.
-
-Player 2: Arrow keys to move, num pad arrow keys (8, 4, 6, 2) to charge the dash, num pad enter to jump."
+description: "I worked on Undead Labs' Xbox and PC title State of Decay 2."
 ---
 
-I was looking for an arcade-style game that you could easily jump into with a friend for a couple of rounds and decided on a battle tops game. You can add up to four players (up to 2 using just one keyboard) who each choose their colour and then battle it out in the arena.
+My second project working for Wushu Studios (not counting internal prototype projects) was State of Decay 2, a zombie survival simulation game. We worked alongside the team at Undead Labs for a while on content updates and bug fixes before getting the reins fully handed over to us for both design and development of further features.
+The biggest of these features was the Curveball system, a procedural system of Boons and Banes, good and bad events that randomly occur to spice up a playthrough. Following that, we reworked zombie spawning, but I was not on that team as I was on the Quality of Life team, working on several QoL updates across the game, adding functionality to make life more enjoyable.
 
-### Battle Top Game
-Each battle top has something of a health bar indicating how fast they are still spinning and once that bar is empty, you lose. Another way to lose is by a ring-out, where another player knocks your battle top out of the arena bounds. A regular clash shoots both battle tops back, but it's also possible to charge up a dash by pulling back on the right thumbstick, like a catapult, and your top into the opponent, blasting them away much farther and faster. It's key that the players avoid this and get a jump functionality to attempt to do so, but one wrong move and you're gone.
-
-### 3D Modelling
-I wanted to try my hand at modelling actual game assets, so I made both the arena and the battle tops model with the Maya modelling software. I wanted to make the game look interesting and spectacular beyond that, however, so I dove into particle systems for good sparks that indicate the charging direction as well as clashes. Clashes are also paired with metallic clash sounds that vary in pitch and speed.
-
-### Investigation of Networking Systems
-As I was exploring the workings of multiplayer games and networking, I found a job! At that job I found out that the former Unity networking system is far from ideal and since I did find out the general way to go about setting up multiplayer networking, I moved on to other projects and my new job itself.
+### Summary of work
+- ActionScript UI
+- Gameplay logic
+	- Character controls and interactions
+	- Vehicle interactions
+	- Zombie spawn logic
+- Fully new Curveball system integrating into the rest of the Game
+	- Special new zombie types
+	- Additional attacks
+	- Community management and effects
+	- Area effects
+- Profiling and optimising the Xbox One performance and out of memory crashes
+- Worked on Xbox One and Xbox Series dev kits

@@ -29,6 +29,9 @@ function FilterPosts() {
 }
 
 function ShowAllPosts() {
+	ActiveTag = "";
+	ActiveCategory = "";
+
 	var posts = document.getElementsByClassName("post-hidden");
 	while (posts.length > 0) {
 		posts[0].classList.remove("post-hidden");
