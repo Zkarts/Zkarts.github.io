@@ -23,3 +23,4 @@ For Wushu Studios, my first project was Destruction All-Stars, a character-based
 - UMG UI work
 - Networking code
 - Testing and debugging on a PS5 devkit
+- Working with CI/CD and build systems via TeamCity

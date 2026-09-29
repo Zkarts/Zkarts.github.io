@@ -9,7 +9,7 @@ preview: "assets/images/sod2.png"
 download:
 read:
 infourl: "https://www.youtube.com/watch?v=MZnssLt-DnI"
-keywords: "Unreal, C++, PC, Xbox, Game, Optimisation"
+keywords: "Unreal, C++, PC, Xbox, Game, Optimisation, CI/CD"
 description: "I worked on Undead Labs' Xbox and PC title State of Decay 2."
 ---
 
@@ -27,5 +27,6 @@ The biggest of these features was the Curveball system, a procedural system of B
 	- Additional attacks
 	- Community management and effects
 	- Area effects
+- Working with CI/CD and build systems via TeamCity
 - Profiling and optimising the Xbox One performance and out of memory crashes
 - Worked on Xbox One and Xbox Series dev kits
