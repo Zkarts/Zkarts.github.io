@@ -1,4 +1,4 @@
-var Active = { Tag = "", Category = "" };
+var Active = { Tag: "", Category: "" };
 
 function ToggleVisibility(self, target) {
 	self.classList.toggle("active");
