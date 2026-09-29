@@ -23,7 +23,7 @@ title: Erik Molenaar
 <ul class="tag-list tag-list-large">
 	{% for cat in site.categories %}
 	  <li class="tag-pill tag-pill-large">
-		<a class="clickable" onclick="FilterPosts(this.textContent)">{{ cat[0] | slugify: "none" }} {{ cat[1].length }} </a>
+		<a class="clickable" onclick="FilterPostsByCat(this.textContent)">{{ cat[0] | slugify: "none" }}</a>
 	  </li>
 	{% endfor %}
 </ul>
@@ -45,7 +45,7 @@ title: Erik Molenaar
 		{% capture tags %}
 			{% for tag in site.tags %}
 			  <li data-sort="{{ site.posts.size | minus: tag[1].size | prepend: '0000' | slice: -4, 4 }}" class="tag-pill tag-pill-large">
-				<a class="clickable" onclick="FilterPosts(this.textContent)">{{ tag[0] | slugify: "none" }}</a>
+				<a class="clickable" onclick="FilterPostsByTag(this.textContent)">{{ tag[0] | slugify: "none" }}</a>
 			  </li>
 			  
 			{% endfor %}

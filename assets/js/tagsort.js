@@ -43,6 +43,7 @@ function HidePostsWithoutTag(tag) {
 			posts[i].classList.add("post-hidden");
 		}
 	}
+}
 
 function HidePostsWithoutCat(cat) {
 	var posts = document.getElementsByClassName("post");
