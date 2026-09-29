@@ -20,8 +20,12 @@ function FilterPostsByTag(tag) {
 }
 function FilterPosts() {
 	ShowAllPosts();
-	HidePostsWithoutCat(ActiveCategory);
-	HidePostsWithoutTag(ActiveTag);
+	if (ActiveCategory != "") {
+		HidePostsWithoutCat(ActiveCategory);
+	}
+	if (ActiveTag != "") {
+		HidePostsWithoutTag(ActiveTag);
+	}
 }
 
 function ShowAllPosts() {

@@ -22,9 +22,11 @@ title: Erik Molenaar
 {% if site.categories %}
 <ul class="tag-list tag-list-large">
 	{% for cat in site.categories %}
-	  <li class="tag-pill tag-pill-large">
-		<a class="clickable" onclick="FilterPostsByCat(this.textContent)">{{ cat[0] | slugify: "none" }}</a>
-	  </li>
+		{% if cat[0] != "projects" %}
+		  <li class="tag-pill tag-pill-large">
+			<a class="clickable" onclick="FilterPostsByCat(this.textContent)">{{ cat[0] | slugify: "none" }}</a>
+		  </li>
+		{% endif %}
 	{% endfor %}
 </ul>
 {% endif %}
