@@ -23,7 +23,7 @@ title: Erik Molenaar
 <ul class="tag-list tag-list-large">
 	{% for cat in site.categories %}
 	  <li class="tag-pill tag-pill-large">
-		<a class="clickable" onclick="FilterPosts(this.textContent)">{{ cat[0] | slugify: "none" }} {{ cat[1] }}</a>
+		<a class="clickable" onclick="FilterPosts(this.textContent)">{{ cat[0] | slugify: "none" }} {{ cat[1].length }} </a>
 	  </li>
 	{% endfor %}
 </ul>
