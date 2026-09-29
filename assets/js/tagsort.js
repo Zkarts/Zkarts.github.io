@@ -1,5 +1,4 @@
-var ActiveTag = "";
-var ActiveCategory = "";
+var Active = { Tag = "", Category = "" };
 
 function ToggleVisibility(self, target) {
 	self.classList.toggle("active");
@@ -11,29 +10,29 @@ function ToggleVisibility(self, target) {
 }
 
 function FilterPostsByCat(cat) {
-	ActiveCategory = cat;
-	console.log("catting: " + ActiveCategory);
+	Active.Category = cat;
+	console.log("catting: " + Active.Category);
 	FilterPosts();
 }
 function FilterPostsByTag(tag) {
-	ActiveTag = tag;
-	console.log("tagging: " + ActiveTag);
+	Active.Tag = tag;
+	console.log("tagging: " + Active.Tag);
 	FilterPosts();
 }
 function FilterPosts() {
 	ShowAllPosts();
 	console.log("filtering");
-	if (ActiveCategory != "") {
-		HidePostsWithoutCat(ActiveCategory);
+	if (Active.Category != "") {
+		HidePostsWithoutCat(Active.Category);
 	}
-	if (ActiveTag != "") {
-		HidePostsWithoutTag(ActiveTag);
+	if (Active.Tag != "") {
+		HidePostsWithoutTag(Active.Tag);
 	}
 }
 
 function ShowAllPosts() {
-	ActiveTag = "";
-	ActiveCategory = "";
+	Active.Tag = "";
+	Active.Category = "";
 
 	var posts = document.getElementsByClassName("post-hidden");
 	while (posts.length > 0) {

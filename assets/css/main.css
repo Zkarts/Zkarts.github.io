@@ -189,6 +189,7 @@ li.post {
 
 .clickable {
 	cursor: pointer;
+	font-weight: bold;
 }
 
 .no-padding {
