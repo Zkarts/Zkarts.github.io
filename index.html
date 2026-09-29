@@ -18,6 +18,17 @@ title: Erik Molenaar
 </ul>
 
 <h2>All</h2>
+
+{% if site.category %}
+<ul class="tag-list tag-list-large">
+	{% for cat in site.category %}
+	  <li class="tag-pill tag-pill-large">
+		<a class="clickable" onclick="FilterPosts(this.textContent)">{{ cat[0] | slugify: "none" }}</a>
+	  </li>
+	{% endfor %}
+</ul>
+{% endif %}
+
 {% if site.tags %}
 <div style="margin-bottom: 10px;">
   <a class="clickable" onclick="ToggleVisibility(this, document.getElementById('tag-box'))">
