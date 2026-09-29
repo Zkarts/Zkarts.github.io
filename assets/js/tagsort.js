@@ -1,3 +1,6 @@
+var ActiveTag = "";
+var ActiveCategory = "";
+
 function ToggleVisibility(self, target) {
 	self.classList.toggle("active");
     if (target.style.maxHeight){
@@ -7,9 +10,18 @@ function ToggleVisibility(self, target) {
     }
 }
 
-function FilterPosts(tag) {
+function FilterPostsByCat(cat) {
+	ActiveCategory = cat;
+	FilterPosts();
+}
+function FilterPostsByTag(tag) {
+	ActiveTag = tag;
+	FilterPosts();
+}
+function FilterPosts() {
 	ShowAllPosts();
-	HidePostsWithoutTag(tag);
+	HidePostsWithoutCat(ActiveCategory);
+	HidePostsWithoutTag(ActiveTag);
 }
 
 function ShowAllPosts() {
@@ -28,6 +40,19 @@ function HidePostsWithoutTag(tag) {
 		
 		var taggedNode = posts[i].firstElementChild;
 		if(taggedNode.getAttribute("data-tags").split(', ').indexOf(tag) == -1) {
+			posts[i].classList.add("post-hidden");
+		}
+	}
+
+function HidePostsWithoutCat(cat) {
+	var posts = document.getElementsByClassName("post");
+	for	(var i = 0; i < posts.length; i++) {
+		if (posts[i].classList.contains("post-featured")) {
+			continue;
+		}
+		
+		var catNode = posts[i].firstElementChild;
+		if(catNode.getAttribute("data-cats").split(', ').indexOf(cat) == -1) {
 			posts[i].classList.add("post-hidden");
 		}
 	}
