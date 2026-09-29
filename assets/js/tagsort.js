@@ -12,14 +12,17 @@ function ToggleVisibility(self, target) {
 
 function FilterPostsByCat(cat) {
 	ActiveCategory = cat;
+	console.log("catting: " + ActiveCategory);
 	FilterPosts();
 }
 function FilterPostsByTag(tag) {
 	ActiveTag = tag;
+	console.log("tagging: " + ActiveTag);
 	FilterPosts();
 }
 function FilterPosts() {
 	ShowAllPosts();
+	console.log("filtering");
 	if (ActiveCategory != "") {
 		HidePostsWithoutCat(ActiveCategory);
 	}
