@@ -14,7 +14,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <section>
+      <section style="margin: 50px">
         <h1 class="name-header">Hi, I am Erik Molenaar</h1>
 		<h3 class="name-header" style="font-size: 2em">Senior Game Programmer</h3>
       </section>
@@ -23,7 +23,7 @@
       {{ content }}
 
       </section>
-      <footer>
+      <section>
 		<div class="about">
 			{% if site.logo %}
 			  <img src="{{site.logo | relative_url}}" alt="Logo" class="logo" />
@@ -61,7 +61,7 @@
         {% endif %}
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       -->
-      </footer>
+      </section>
     </div>
     <!--<script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>-->
     {% if site.google_analytics %}
