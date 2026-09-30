@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+	<link href="https://fonts.googleapis.com/css2?family=Asimovian&display=swap" rel="stylesheet">
 {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
 	<link rel="stylesheet" href="{{ "/assets/css/main.css?v=" | append: site.github.build_revision | relative_url }}">
@@ -14,14 +14,14 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+      <section>
+        <h1><a class="name-header" href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
         
         {% if site.logo %}
           <img src="{{site.logo | relative_url}}" alt="Logo" class="logo" />
         {% endif %}
 
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
+        <p>Passionate Senior Programmer in AAA Game Development with a deep interest in the power of hardware and harnessing that power through optimisation or data-oriented programming. Always up for a challenge, such as tackling multiplayer programming. Quick on the uptake and enthusiastic about learning, as well as sharing knowledge. Proactive about potential for improvements, both personally and communication or team-wise. I have many creative hobbies from music to art, often overlapping with game development. Detail-oriented with an odd quirk of being able to spot the one spelling error on an entire page.<br/>Ever curious and always eager to share fun and joy, both within my team and to the players, because that's what it's all about.</p>
 
 		{% comment %}
         {% if site.github.is_project_page %}
@@ -45,7 +45,7 @@
 		  <img src="/assets/icons/linkedin.png" class="icon"></img>
 		  <a href="https://www.linkedin.com/in/erik-molenaar-840607162" target="_blank">View my profile</a>
 		</div>
-      </header>
+      </section>
       <section>
 
       {{ content }}
