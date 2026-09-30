@@ -6,7 +6,7 @@ title: Erik Molenaar
 <script type="text/javascript" src="assets/js/tagsort.js"></script>
 <noscript>Sorry, your browser does not support JavaScript! Functionality may be limited.</noscript>
 
-<h2>Featured</h2>
+<h3 class="name-header">Featured</h3>
 <ul class="no-padding post-list">
   {% for post in site.posts %}
     {% if post.featured %}
@@ -17,7 +17,7 @@ title: Erik Molenaar
   {% endfor %}
 </ul>
 
-<h2>All</h2>
+<h3 class="name-header">All</h3>
 
 <div style="margin-bottom: 10px;">
   <a class="clickable" onclick="ToggleVisibility(this, document.getElementById('tag-box'))">
