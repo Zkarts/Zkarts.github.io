@@ -4,29 +4,29 @@ const Filter =
 	Category: "",
 	
 	FilterPostsByCat: function(cat) {
-		Category = cat.toLowerCase();
-		console.log("catting: " + Category);
-		FilterPosts();
+		this.Category = cat.toLowerCase();
+		console.log("catting: " + this.Category);
+		this.FilterPosts();
 	},
 	FilterPostsByTag: function(tag) {
-		Tag = tag.toLowerCase();
-		console.log("tagging: " + Tag);
-		FilterPosts();
+		this.Tag = tag.toLowerCase();
+		console.log("tagging: " + this.Tag);
+		this.FilterPosts();
 	},
 	FilterPosts: function() {
-		ShowAllPosts();
+		this.ShowAllPosts();
 		console.log("filtering");
-		if (Category != "") {
+		if (this.Category != "") {
 			HidePostsWithoutCat(Category);
 		}
-		if (Tag != "") {
+		if (this.Tag != "") {
 			HidePostsWithoutTag(Tag);
 		}
 	},
 
 	ShowAllPosts: function() {
-		Tag = "";
-		Category = "";
+		this.Tag = "";
+		this.Category = "";
 
 		var posts = document.getElementsByClassName("post-hidden");
 		while (posts.length > 0) {
