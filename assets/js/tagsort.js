@@ -10,18 +10,15 @@ function ToggleVisibility(self, target) {
 }
 
 function FilterPostsByCat(cat) {
-	Filter.Category = cat;
-	console.log("catting: " + Filter.Category);
+	Filter.Category = cat.toLowerCase();
 	FilterPosts();
 }
 function FilterPostsByTag(tag) {
-	Filter.Tag = tag;
-	console.log("tagging: " + Filter.Tag);
+	Filter.Tag = tag.toLowerCase();
 	FilterPosts();
 }
 function FilterPosts() {
 	ShowAllPosts(false);
-	console.log("filtering");
 	if (Filter.Category != "") {
 		HidePostsWithoutCat(Filter.Category);
 	}

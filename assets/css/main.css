@@ -170,6 +170,7 @@ li.post {
 .tag-list {
 	list-style: none;
 	margin: 0;
+	padding: 0;
 }
 .tag-list-postpreview {
 	background-color: var(--content-background);
