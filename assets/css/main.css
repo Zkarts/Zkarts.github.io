@@ -25,6 +25,9 @@ body {
 a {
 	color: var(--text-color);
 }
+a:hover {
+	color: var(--text-color);
+}
 
 h1, h2, h3, h4, h5, h6 {
 	color: var(--text-color);
@@ -139,12 +142,11 @@ li.post {
 
 .link-box {
 	background-color: var(--content-foreground);
-	color: #0e609a;
 	
 	padding: 10px;
 	margin-bottom: 0;
 	border-radius: 10px 10px 0 0;
-	border: 1px solid gray;
+	border: 1px solid var(--background-sub);
 }
 
 .collapse-box {
@@ -155,7 +157,7 @@ li.post {
 .collapse-box-content {
 	background-color: var(--content-background);
 	border-radius: 0 0 10px 10px;
-	border: 1px solid gray;
+	border: 1px solid var(--background-sub);
 	border-top: none;
 	
 	padding: 10px;
@@ -189,7 +191,7 @@ li.post {
 .tag-pill-postpreview {
 	font-weight: bold;
 	
-	background-color: #666;
+	background-color: var(--background);
 	border-radius: 10px;
 	
 	font-size: x-small;
@@ -200,7 +202,7 @@ li.post {
 	margin-bottom: 5px;
 }
 .tag-pill-large {
-	background-color: #777;
+	background-color: var(--background);
 	border-radius: 20px;
 	
 	font-size: medium;
