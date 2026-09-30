@@ -31,35 +31,34 @@ title: Erik Molenaar
 	    </li>
       </ul>
 		{% if site.categories %}
-		<h3>Categories</h3>
-		<ul class="tag-list tag-list-large">
-			{% for cat in site.categories %}
-				{% if cat[0] != "projects" %}
-				  <li class="tag-pill tag-pill-large">
-					<a class="clickable" onclick="FilterPostsByCat(this.textContent)">{{ cat[0] | capitalize }}</a>
-				  </li>
-				{% endif %}
-			{% endfor %}
-		</ul>
+			<h3>Categories</h3>
+			<ul class="tag-list tag-list-large">
+				{% for cat in site.categories %}
+					{% if cat[0] != "projects" %}
+					  <li class="tag-pill tag-pill-large">
+						<a class="clickable" onclick="FilterPostsByCat(this.textContent)">{{ cat[0] | capitalize }}</a>
+					  </li>
+					{% endif %}
+				{% endfor %}
+			</ul>
 		{% endif %}
 		{% if site.tags %}
-		<h3>Tags</h3>
-	    <ul class="tag-list tag-list-large">
-			{% capture tags %}
-				{% for tag in site.tags %}
-				  <li data-sort="{{ site.posts.size | minus: tag[1].size | prepend: '0000' | slice: -4, 4 }}" class="tag-pill tag-pill-large">
-					<a class="clickable" onclick="FilterPostsByTag(this.textContent)">{{ tag[0] | capitalize }}</a>
-				  </li>
-				  
-				{% endfor %}
-			{% endcapture %}
-			{{ tags | split:'</li>' | sort | join:'</li>' }}
-	    </ul>
+			<h3>Tags</h3>
+			<ul class="tag-list tag-list-large">
+				{% capture tags %}
+					{% for tag in site.tags %}
+					  <li data-sort="{{ site.posts.size | minus: tag[1].size | prepend: '0000' | slice: -4, 4 }}" class="tag-pill tag-pill-large">
+						<a class="clickable" onclick="FilterPostsByTag(this.textContent)">{{ tag[0] | capitalize }}</a>
+					  </li>
+					  
+					{% endfor %}
+				{% endcapture %}
+				{{ tags | split:'</li>' | sort | join:'</li>' }}
+			</ul>
 		{% endif %}
 	</div>
   </div>
 </div>
-{% endif %}
 
 <ul class="no-padding post-list">
   {% for post in site.posts %}
