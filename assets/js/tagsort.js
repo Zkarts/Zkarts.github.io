@@ -1,4 +1,4 @@
-var Active = { Tag: "", Category: "" }
+const Filter = { Tag: "", Category: "" }
 
 function ToggleVisibility(self, target) {
 	self.classList.toggle("active");
@@ -10,29 +10,29 @@ function ToggleVisibility(self, target) {
 }
 
 function FilterPostsByCat(cat) {
-	window.Active.Category = cat;
-	console.log("catting: " + window.Active.Category);
+	window.Filter.Category = cat;
+	console.log("catting: " + window.Filter.Category);
 	FilterPosts();
 }
 function FilterPostsByTag(tag) {
-	window.Active.Tag = tag;
-	console.log("tagging: " + window.Active.Tag);
+	window.Filter.Tag = tag;
+	console.log("tagging: " + window.Filter.Tag);
 	FilterPosts();
 }
 function FilterPosts() {
 	ShowAllPosts();
 	console.log("filtering");
-	if (Active.Category != "") {
-		HidePostsWithoutCat(window.Active.Category);
+	if (window.Filter.Category != "") {
+		HidePostsWithoutCat(window.Filter.Category);
 	}
-	if (Active.Tag != "") {
-		HidePostsWithoutTag(window.Active.Tag);
+	if (window.Filter.Tag != "") {
+		HidePostsWithoutTag(window.Filter.Tag);
 	}
 }
 
 function ShowAllPosts() {
-	Active.Tag = "";
-	Active.Category = "";
+	window.Filter.Tag = "";
+	window.Filter.Category = "";
 
 	var posts = document.getElementsByClassName("post-hidden");
 	while (posts.length > 0) {
