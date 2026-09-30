@@ -10,10 +10,10 @@
 	
 	--background: #0E2A47;
 	--background-sub: #00459E;
-    --content-foreground: #00CC8F; 
-    --content-foreground-85: #00CC8FD9; 
-    --content-background: #068864; 
-	--text-color: #80A1D4;
+    --content-foreground: #0A2434; 
+    --content-foreground-85: #0A243494; 
+    --content-background: #0b1634; 
+	--text-color: #B4CDF4;
 }
 
 body {
@@ -23,10 +23,7 @@ body {
 }
 
 a {
-	color: #70A9A1;
-}
-a:hover {
-	color: #70A9A1;
+	color: var(--text-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -80,13 +77,14 @@ section {
 
 .name-header {
 	font-family: Asimovian;
-	font-size: 3em;
+	font-size: 5em;
 	text-align: center;
 	margin-bottom: 0;
 }
 
 h3.name-header {
 	font-size: 2em;
+	margin-bottom: 20px;
 }
 
 .post-image {
