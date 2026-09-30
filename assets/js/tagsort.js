@@ -9,13 +9,13 @@ function ToggleVisibility(self, target) {
 	}
 }
 
-function FilterPostsByCat(cat) {
-	Filter.Category = cat;
+function FilterPostsByCat(cat, Filter) {
+	Filter.Category = cat.toLowerCase();
 	console.log("catting: " + Filter.Category);
 	FilterPosts();
 }
-function FilterPostsByTag(tag) {
-	Filter.Tag = tag;
+function FilterPostsByTag(tag, Filter) {
+	Filter.Tag = tag.toLowerCase();
 	console.log("tagging: " + Filter.Tag);
 	FilterPosts();
 }
