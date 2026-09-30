@@ -1,4 +1,39 @@
-const Filter = { Tag: "", Category: "" }
+const Filter =
+{
+	Tag: "",
+	Category: "",
+	
+	FilterPostsByCat: function(cat) {
+		Category = cat.toLowerCase();
+		console.log("catting: " + Category);
+		FilterPosts();
+	},
+	FilterPostsByTag: function(tag) {
+		Tag = tag.toLowerCase();
+		console.log("tagging: " + Tag);
+		FilterPosts();
+	},
+	FilterPosts: function() {
+		ShowAllPosts();
+		console.log("filtering");
+		if (Category != "") {
+			HidePostsWithoutCat(Category);
+		}
+		if (Tag != "") {
+			HidePostsWithoutTag(Tag);
+		}
+	},
+
+	ShowAllPosts: function() {
+		Tag = "";
+		Category = "";
+
+		var posts = document.getElementsByClassName("post-hidden");
+		while (posts.length > 0) {
+			posts[0].classList.remove("post-hidden");
+		}
+	}
+}
 
 function ToggleVisibility(self, target) {
 	self.classList.toggle("active");
@@ -6,37 +41,6 @@ function ToggleVisibility(self, target) {
 	  target.style.maxHeight = null;
 	} else {
 	  target.style.maxHeight = target.scrollHeight + "px";
-	}
-}
-
-function FilterPostsByCat(cat, inFilter) {
-	inFilter.Category = cat.toLowerCase();
-	console.log("catting: " + inFilter.Category);
-	FilterPosts();
-}
-function FilterPostsByTag(tag, inFilter) {
-	inFilter.Tag = tag.toLowerCase();
-	console.log("tagging: " + inFilter.Tag);
-	FilterPosts();
-}
-function FilterPosts() {
-	ShowAllPosts();
-	console.log("filtering");
-	if (Filter.Category != "") {
-		HidePostsWithoutCat(Filter.Category);
-	}
-	if (Filter.Tag != "") {
-		HidePostsWithoutTag(Filter.Tag);
-	}
-}
-
-function ShowAllPosts() {
-	Filter.Tag = "";
-	Filter.Category = "";
-
-	var posts = document.getElementsByClassName("post-hidden");
-	while (posts.length > 0) {
-		posts[0].classList.remove("post-hidden");
 	}
 }
 

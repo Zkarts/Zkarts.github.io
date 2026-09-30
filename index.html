@@ -24,7 +24,7 @@ title: Erik Molenaar
 	{% for cat in site.categories %}
 		{% if cat[0] != "projects" %}
 		  <li class="tag-pill tag-pill-large">
-			<a class="clickable" onclick="FilterPostsByCat(this.textContent, Filter)">{{ cat[0] | capitalize }}</a>
+			<a class="clickable" onclick="Filter.FilterPostsByCat(this.textContent)">{{ cat[0] | capitalize }}</a>
 		  </li>
 		{% endif %}
 	{% endfor %}
@@ -40,14 +40,14 @@ title: Erik Molenaar
     <div class="collapse-box-content">
 	  <ul class="tag-list tag-list-large">
 	    <li class="tag-pill tag-pill-large">
-		  <a class="clickable" onclick="ShowAllPosts()">All</a>
+		  <a class="clickable" onclick="Filter.ShowAllPosts()">All</a>
 	    </li>
       </ul>
 	  <ul class="tag-list tag-list-large">
 		{% capture tags %}
 			{% for tag in site.tags %}
 			  <li data-sort="{{ site.posts.size | minus: tag[1].size | prepend: '0000' | slice: -4, 4 }}" class="tag-pill tag-pill-large">
-				<a class="clickable" onclick="FilterPostsByTag(this.textContent, Filter)">{{ tag[0] | capitalize }}</a>
+				<a class="clickable" onclick="Filter.FilterPostsByTag(this.textContent)">{{ tag[0] | capitalize }}</a>
 			  </li>
 			  
 			{% endfor %}
