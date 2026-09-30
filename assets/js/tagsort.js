@@ -10,29 +10,29 @@ function ToggleVisibility(self, target) {
 }
 
 function FilterPostsByCat(cat) {
-	window.Filter.Category = cat;
-	console.log("catting: " + window.Filter.Category);
+	Filter.Category = cat;
+	console.log("catting: " + Filter.Category);
 	FilterPosts();
 }
 function FilterPostsByTag(tag) {
-	window.Filter.Tag = tag;
-	console.log("tagging: " + window.Filter.Tag);
+	Filter.Tag = tag;
+	console.log("tagging: " + Filter.Tag);
 	FilterPosts();
 }
 function FilterPosts() {
 	ShowAllPosts();
 	console.log("filtering");
-	if (window.Filter.Category != "") {
-		HidePostsWithoutCat(window.Filter.Category);
+	if (Filter.Category != "") {
+		HidePostsWithoutCat(Filter.Category);
 	}
-	if (window.Filter.Tag != "") {
-		HidePostsWithoutTag(window.Filter.Tag);
+	if (Filter.Tag != "") {
+		HidePostsWithoutTag(Filter.Tag);
 	}
 }
 
 function ShowAllPosts() {
-	window.Filter.Tag = "";
-	window.Filter.Category = "";
+	Filter.Tag = "";
+	Filter.Category = "";
 
 	var posts = document.getElementsByClassName("post-hidden");
 	while (posts.length > 0) {
