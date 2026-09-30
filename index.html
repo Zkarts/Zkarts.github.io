@@ -19,19 +19,6 @@ title: Erik Molenaar
 
 <h2>All</h2>
 
-{% if site.categories %}
-<ul class="tag-list tag-list-large">
-	{% for cat in site.categories %}
-		{% if cat[0] != "projects" %}
-		  <li class="tag-pill tag-pill-large">
-			<a class="clickable" onclick="FilterPostsByCat(this.textContent)">{{ cat[0] | capitalize }}</a>
-		  </li>
-		{% endif %}
-	{% endfor %}
-</ul>
-{% endif %}
-
-{% if site.tags %}
 <div style="margin-bottom: 10px;">
   <a class="clickable" onclick="ToggleVisibility(this, document.getElementById('tag-box'))">
     <h3 class="link-box">Filters</h3>
@@ -43,17 +30,32 @@ title: Erik Molenaar
 		  <a class="clickable" onclick="ShowAllPosts(true)">All</a>
 	    </li>
       </ul>
-	  <ul class="tag-list tag-list-large">
-		{% capture tags %}
-			{% for tag in site.tags %}
-			  <li data-sort="{{ site.posts.size | minus: tag[1].size | prepend: '0000' | slice: -4, 4 }}" class="tag-pill tag-pill-large">
-				<a class="clickable" onclick="FilterPostsByTag(this.textContent)">{{ tag[0] | capitalize }}</a>
-			  </li>
-			  
+		{% if site.categories %}
+		<h3>Categories</h3>
+		<ul class="tag-list tag-list-large">
+			{% for cat in site.categories %}
+				{% if cat[0] != "projects" %}
+				  <li class="tag-pill tag-pill-large">
+					<a class="clickable" onclick="FilterPostsByCat(this.textContent)">{{ cat[0] | capitalize }}</a>
+				  </li>
+				{% endif %}
 			{% endfor %}
-		{% endcapture %}
-		{{ tags | split:'</li>' | sort | join:'</li>' }}
-	  </ul>
+		</ul>
+		{% endif %}
+		{% if site.tags %}
+		<h3>Tags</h3>
+	    <ul class="tag-list tag-list-large">
+			{% capture tags %}
+				{% for tag in site.tags %}
+				  <li data-sort="{{ site.posts.size | minus: tag[1].size | prepend: '0000' | slice: -4, 4 }}" class="tag-pill tag-pill-large">
+					<a class="clickable" onclick="FilterPostsByTag(this.textContent)">{{ tag[0] | capitalize }}</a>
+				  </li>
+				  
+				{% endfor %}
+			{% endcapture %}
+			{{ tags | split:'</li>' | sort | join:'</li>' }}
+	    </ul>
+		{% endif %}
 	</div>
   </div>
 </div>
