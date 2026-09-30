@@ -9,14 +9,14 @@ function ToggleVisibility(self, target) {
 	}
 }
 
-function FilterPostsByCat(cat, Filter) {
-	Filter.Category = cat.toLowerCase();
-	console.log("catting: " + Filter.Category);
+function FilterPostsByCat(cat, inFilter) {
+	inFilter.Category = cat.toLowerCase();
+	console.log("catting: " + inFilter.Category);
 	FilterPosts();
 }
-function FilterPostsByTag(tag, Filter) {
-	Filter.Tag = tag.toLowerCase();
-	console.log("tagging: " + Filter.Tag);
+function FilterPostsByTag(tag, inFilter) {
+	inFilter.Tag = tag.toLowerCase();
+	console.log("tagging: " + inFilter.Tag);
 	FilterPosts();
 }
 function FilterPosts() {
