@@ -45,16 +45,26 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
+.about {
+	display: flex;
+}
+
+.about div {
+	align-self: center;
+}
+
 .logo {
+	float: left;
 	display: block;
 	width: 80%;
 	max-width: 250px;
-	margin: 0 auto 10px auto;
+	margin: 0 50px 10px auto;
 }
 
 .name-header {
 	font-family: Asimovian;
 	font-size: 3em;
+	text-align: center;
 }
 
 .post-image {
