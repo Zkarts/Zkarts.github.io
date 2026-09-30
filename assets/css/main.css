@@ -52,13 +52,17 @@ section {
 .about {
 	display: flex;
 }
+@media (min-width: 961px) {
+	.about {
+		flex-wrap: wrap;
+	}
+}
 
 .about div {
 	align-self: center;
 }
 
 .logo {
-	float: left;
 	display: block;
 	width: 80%;
 	max-width: 250px;
