@@ -4,7 +4,7 @@
 	<ul class="tag-list" style="position: absolute">
 	  {% if post.categories %}
 	    {% for cat in post.categories %}
-		  <li class="tag-pill tag-pill-postpreview" style="display: inline-block; margin: 2px 5px">{{ cat[0] | capitalize }}</li>
+		  <li class="tag-pill tag-pill-postpreview" style="display: inline-block; margin: 2px 5px">{{ cat | capitalize }}</li>
 	    {% endfor %}
 	  {% endif %}
 	</ul>
