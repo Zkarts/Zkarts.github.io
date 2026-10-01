@@ -3,7 +3,22 @@ layout: default
 ---
 <h1>{{ page.title }}</h1>
 <div class="margin-bottom-10">
+  
+  {% if page.description %}
+  	<i>{{ page.description }}</i>
+	<br>
+	<br>
+  {% endif %}
+  
+  {% if page.keywords %}
+  	<b><i>{{ page.keywords }}</i></b>
+	<br>
+  {% endif %}
+  
   {% if page.infourl %}
+	{% if page.infourl contains 'youtube.com/embed' %}
+		<iframe class="video" src="{{ page.infourl }}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	{% endif %}
     <a class="infourl" href="{{ page.infourl }}"><i>More info</i></a>
 	<br>
   {% endif %}
@@ -27,23 +42,13 @@ layout: default
 	<br>
   {% endif %}
   
-  {% if page.keywords %}
-  	<b><i>{{ page.keywords }}</i></b>
-	<br>
-  {% endif %}
-  
-  {% if page.description %}
-  	<i>{{ page.description }}</i>
-	<br>
-  {% endif %}
-  
   <br>
   
   {{ content }}
 </div>
 
 {% if page.images %}
-    <div>
+    <div class="post-image-box">
     {% for image in page.images %}
         <img class="post-image" src="{{ image | absolute_url }}">
     {% endfor %}

@@ -8,7 +8,7 @@ images:
 preview: "assets/images/das.png"
 download:
 read:
-infourl: "https://www.youtube.com/watch?v=85Ia7TMXSio"
+infourl: "https://www.youtube.com/embed/85Ia7TMXSio"
 keywords: "Unreal, C++, Slate, gameplay, particles, PS5, Game"
 description: "I worked on Lucid Games' PS5 exclusive title Destruction All-Stars"
 ---

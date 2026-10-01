@@ -8,7 +8,7 @@ images:
 preview: "assets/images/helldivers.png"
 download:
 read:
-infourl: "https://www.youtube.com/watch?v=sr22D9zoRjo"
+infourl: "https://www.youtube.com/embed/sr22D9zoRjo"
 keywords: "C++, Stingray, Co-development, PC, PlayStation, Xbox"
 description: "I worked on Arrowhead Games' multi-platform title Helldivers 2"
 ---

@@ -110,10 +110,13 @@ h3.name-header {
 	margin-bottom: 20px;
 }
 
+.post-image-box {
+	display: flex;
+	flex-flow: wrap;
+	justify-content: center;
+}
 .post-image {
-	margin-top: 10px !important;
-	display: block;
-	margin: auto;
+	margin: 20px;
 }
 
 .icon {
@@ -281,17 +284,9 @@ li.post {
 	align-items: center;
 }
 
-.video-container {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%;
-}
-
 .video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;	
+    width: 50%;
+	aspect-ratio: 16/9;
+	display: flex;
+	margin: auto;
 }

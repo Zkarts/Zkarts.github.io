@@ -8,7 +8,7 @@ images:
 preview: "assets/images/sod2.png"
 download:
 read:
-infourl: "https://www.youtube.com/watch?v=MZnssLt-DnI"
+infourl: "https://www.youtube.com/embed/MZnssLt-DnI"
 keywords: "Unreal, C++, PC, Xbox, Game, Optimisation, CI/CD"
 description: "I worked on Undead Labs' Xbox and PC title State of Decay 2."
 ---
