@@ -123,6 +123,11 @@ h3.name-header {
 	margin-right: 10px;
 }
 
+.featured-list {
+	width: 70%;
+	margin: 0 auto 20px auto;
+}
+
 .post-list {
 	text-align: center;
 }

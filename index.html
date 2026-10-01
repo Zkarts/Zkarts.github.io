@@ -7,7 +7,7 @@ title: Erik Molenaar
 <noscript>Sorry, your browser does not support JavaScript! Functionality may be limited.</noscript>
 
 <h3 class="name-header">Featured</h3>
-<ul class="no-padding post-list">
+<ul class="no-padding post-list featured-list">
   {% for post in site.posts %}
     {% if post.featured %}
       <li class="post grow post-featured">
@@ -21,8 +21,10 @@ title: Erik Molenaar
 
 <div>
 	{% if site.categories %}
-		<h3>Categories</h3>
 		<ul class="tag-list tag-list-large">
+			<li class="tag-pill tag-pill-large">
+			  <a class="clickable" onclick="ShowAllPosts(true)">All</a>
+			</li>
 			{% for cat in site.categories %}
 				{% if cat[0] != "projects" %}
 				  <li class="tag-pill tag-pill-large">
@@ -35,13 +37,7 @@ title: Erik Molenaar
 </div>
 
 <div class="filter-box" style="margin-bottom: 10px;">
-  <div id="tag-box" class="collapse-box">
     <div class="collapse-box-content">
-	  <ul class="tag-list tag-list-large">
-	    <li class="tag-pill tag-pill-large">
-		  <a class="clickable" onclick="ShowAllPosts(true)">All</a>
-	    </li>
-      </ul>
 		{% if site.tags %}
 			<h3>Filter by tags</h3>
 			<ul class="tag-list tag-list-large">
@@ -56,7 +52,6 @@ title: Erik Molenaar
 				{{ tags | split:'</li>' | sort | join:'</li>' }}
 			</ul>
 		{% endif %}
-	</div>
   </div>
 </div>
 
