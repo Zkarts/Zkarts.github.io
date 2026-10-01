@@ -244,6 +244,12 @@ li.post {
 	margin-right: 7px;
 	margin-bottom: 10px;
 }
+.tag-pill.personal {
+	background-color: green;
+}
+.tag-pill.professional {
+	background-color: blue;
+}
 
 .grow {
   transition: all .5s ease-in-out;
