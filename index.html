@@ -17,12 +17,24 @@ title: Erik Molenaar
   {% endfor %}
 </ul>
 
-<h3 class="name-header">All</h3>
+<h3 class="name-header" style="text-align: left">All games & projects</h3>
 
-<div style="margin-bottom: 10px;">
-  <a class="clickable" onclick="ToggleVisibility(this, document.getElementById('tag-box'))">
-    <h3 class="link-box">Filters</h3>
-  </a>
+<div>
+	{% if site.categories %}
+		<h3>Categories</h3>
+		<ul class="tag-list tag-list-large">
+			{% for cat in site.categories %}
+				{% if cat[0] != "projects" %}
+				  <li class="tag-pill tag-pill-large">
+					<a class="clickable" onclick="FilterPostsByCat(this.textContent)">{{ cat[0] | capitalize }}</a>
+				  </li>
+				{% endif %}
+			{% endfor %}
+		</ul>
+	{% endif %}
+</div>
+
+<div class="filter-box" style="margin-bottom: 10px;">
   <div id="tag-box" class="collapse-box">
     <div class="collapse-box-content">
 	  <ul class="tag-list tag-list-large">
@@ -30,20 +42,8 @@ title: Erik Molenaar
 		  <a class="clickable" onclick="ShowAllPosts(true)">All</a>
 	    </li>
       </ul>
-		{% if site.categories %}
-			<h3>Categories</h3>
-			<ul class="tag-list tag-list-large">
-				{% for cat in site.categories %}
-					{% if cat[0] != "projects" %}
-					  <li class="tag-pill tag-pill-large">
-						<a class="clickable" onclick="FilterPostsByCat(this.textContent)">{{ cat[0] | capitalize }}</a>
-					  </li>
-					{% endif %}
-				{% endfor %}
-			</ul>
-		{% endif %}
 		{% if site.tags %}
-			<h3>Tags</h3>
+			<h3>Filter by tags</h3>
 			<ul class="tag-list tag-list-large">
 				{% capture tags %}
 					{% for tag in site.tags %}
@@ -60,7 +60,7 @@ title: Erik Molenaar
   </div>
 </div>
 
-<ul class="no-padding post-list">
+<ul class="no-padding post-list" style="width: 70%">
   {% for post in site.posts %}
     <li class="post grow">
       {% include post-format.html %}

@@ -160,6 +160,14 @@ li.post {
 	align-self: flex-end;
 }
 
+.filter-box {
+	margin-bottom: 10px;
+	float: right;
+	width: 30%;
+	position: sticky;
+	top: 20px;
+}
+
 .link-box {
 	background-color: var(--content-foreground);
 	
@@ -178,8 +186,6 @@ li.post {
 	background-color: var(--content-background);
 	border-radius: 0 0 10px 10px;
 	border: 1px solid var(--background-sub);
-	border-top: none;
-	
 	padding: 10px;
 }
 
