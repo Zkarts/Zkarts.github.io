@@ -69,8 +69,11 @@ section {
 	font-size: 1.5em;
 	background-color: var(--content-foreground);
 	margin: 0 5px;
-	border-radius: 10px 10px 0 0;
+	border-radius: 10px;
 	border: 1px solid var(--background-sub);
+	padding: 5px 10px;
+	font-weight: bold;
+	color: var(--text-color) !important;
 }
 
 .about {
