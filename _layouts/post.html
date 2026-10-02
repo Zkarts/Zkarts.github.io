@@ -15,11 +15,18 @@ layout: default
 	<br>
   {% endif %}
   
+  {% if page.images %}
+    <div class="post-image-box">
+        <img class="post-image" src="{{ page.images[0] | absolute_url }}">
+    </div>
+  {% endif %}
+  
   {% if page.infourl %}
 	{% if page.infourl contains 'youtube.com/embed' %}
 		<iframe class="video" src="{{ page.infourl }}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	{% else %}
+		<a class="infourl" href="{{ page.infourl }}"><i>More info</i></a>
 	{% endif %}
-    <a class="infourl" href="{{ page.infourl }}"><i>More info</i></a>
 	<br>
   {% endif %}
   
@@ -50,7 +57,9 @@ layout: default
 {% if page.images %}
     <div class="post-image-box">
     {% for image in page.images %}
-        <img class="post-image" src="{{ image | absolute_url }}">
+		{% if image != page.images[0] %}
+			<img class="post-image" src="{{ image | absolute_url }}">
+		{% endif %}
     {% endfor %}
     </div>
 {% endif %}

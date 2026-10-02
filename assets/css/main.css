@@ -117,6 +117,8 @@ h3.name-header {
 }
 .post-image {
 	margin: 20px;
+	max-width: 50%;
+	height: 300px;
 }
 
 .icon {
@@ -170,10 +172,15 @@ li.post {
 
 .filter-box {
 	margin-bottom: 10px;
-	float: right;
-	width: 30%;
-	position: sticky;
-	top: 20px;
+}
+
+@media (min-width: 961px) {
+	.filter-box {
+		float: right;
+		width: 30%;
+		position: sticky;
+		top: 20px;
+	}
 }
 
 .link-box {
