@@ -145,7 +145,7 @@ h3.name-header {
 .post-list {
 	text-align: center;
 }
-@media (max-width: 960px) {
+@media (min-width: 960px) {
 	.post-list {
 		width: 70%;
 	}
