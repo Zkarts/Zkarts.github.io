@@ -10,7 +10,7 @@ function ToggleVisibility(self, target) {
 }
 
 function FilterPostsByCat(button, cat) {
-	let children = getElementById("category-pills").childNodes;
+	let children = document.getElementById("category-pills").childNodes;
 	for (const node of children) {
 		node.classList.remove("active");
 	}
@@ -20,7 +20,7 @@ function FilterPostsByCat(button, cat) {
 	FilterPosts();
 }
 function FilterPostsByTag(button, tag) {
-	let children = getElementById("tag-pills").childNodes;
+	let children = document.getElementById("tag-pills").childNodes;
 	for (const node of children) {
 		node.classList.remove("active");
 	}
