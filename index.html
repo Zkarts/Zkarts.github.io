@@ -23,7 +23,7 @@ title: Erik Molenaar
 	{% if site.categories %}
 		<ul class="tag-list tag-list-large" id="category-pills">
 			<li class="tag-pill tag-pill-large">
-			  <a class="clickable" onclick="ShowAllPosts(true)">All</a>
+			  <a class="clickable" onclick="FilterPostsByCat(this, '')">All</a>
 			</li>
 			{% for cat in site.categories %}
 				{% if cat[0] != "projects" %}
@@ -51,7 +51,7 @@ title: Erik Molenaar
 				{% endcapture %}
 				{{ tags | split:'</li>' | sort | join:'</li>' }}
 				<br>
-				<li><a class="clickable" onclick="FilterPostsByCat(this, "")">Reset tag filters</a><li>
+				<li><a class="clickable" onclick="FilterPostsByTag(this, '')" style="color: #1570c0">Reset tag filters</a><li>
 			</ul>
 		{% endif %}
   </div>

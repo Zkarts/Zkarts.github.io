@@ -15,7 +15,9 @@ function FilterPostsByCat(button, cat) {
 		node.classList.remove("active");
 	}
 	
-	button.parentNode.classList.add("active");
+	if (button != null) {
+		button.parentNode.classList.add("active");
+	}
 	Filter.Category = cat.toLowerCase();
 	FilterPosts();
 }
@@ -25,7 +27,9 @@ function FilterPostsByTag(button, tag) {
 		node.classList.remove("active");
 	}
 	
-	button.parentNode.classList.add("active");
+	if (button != null) {
+		button.parentNode.classList.add("active");
+	}
 	Filter.Tag = tag.toLowerCase();
 	FilterPosts();
 }
