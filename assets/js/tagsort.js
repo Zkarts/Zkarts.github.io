@@ -9,11 +9,23 @@ function ToggleVisibility(self, target) {
 	}
 }
 
-function FilterPostsByCat(cat) {
+function FilterPostsByCat(button, cat) {
+	let children = getElementById("category-pills").childNodes;
+	for (const node of children) {
+		node.classList.remove("active");
+	}
+	
+	button.parentNode.classList.add("active");
 	Filter.Category = cat.toLowerCase();
 	FilterPosts();
 }
-function FilterPostsByTag(tag) {
+function FilterPostsByTag(button, tag) {
+	let children = getElementById("tag-pills").childNodes;
+	for (const node of children) {
+		node.classList.remove("active");
+	}
+	
+	button.parentNode.classList.add("active");
 	Filter.Tag = tag.toLowerCase();
 	FilterPosts();
 }

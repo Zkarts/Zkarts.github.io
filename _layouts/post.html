@@ -15,6 +15,11 @@ layout: default
 	<br>
   {% endif %}
   
+  {% if page.read %}
+  	<a href="{{ page.read | absolute_url }}" target="_blank">View <strong>PDF File</strong></a>
+	<br>
+  {% endif %}
+  
   {% if page.images %}
     <div class="post-image-box">
         <img class="post-image" src="{{ page.images[0] | absolute_url }}">
@@ -35,11 +40,6 @@ layout: default
 	<br>
   {% endif %}
   
-  {% if page.read %}
-  	<a href="{{ page.read | absolute_url }}" target="_blank">View <strong>PDF File</strong></a>
-	<br>
-  {% endif %}
-  
   {% if page.repourl %}
   	<a class="infourl" href="{{ page.repourl }}"><i>Go to <strong>Repository</strong></i></a>
 	<br>
@@ -48,8 +48,6 @@ layout: default
   {% if page.infourl or page.download or page.read or page.repourl %}
 	<br>
   {% endif %}
-  
-  <br>
   
   {{ content }}
 </div>
